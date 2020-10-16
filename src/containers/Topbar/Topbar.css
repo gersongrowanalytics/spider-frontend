@@ -1,0 +1,21 @@
+#nombreUsuarioLogeado{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4D4D4D;
+}
+
+#logoTopbar{
+    margin-left: 41px;
+    margin-right: 101px;
+}
+
+#iconoMenuTopbar{
+    position: absolute;
+    padding-top: 23px;
+    width: 23px;
+    height: 16px;
+    margin-right: -20px;
+}

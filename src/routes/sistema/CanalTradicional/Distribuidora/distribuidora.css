@@ -1,0 +1,17 @@
+#taparIzqcdistribuidora{
+    background:#EAEAEA;
+    position: absolute;
+    bottom: 10px;
+    width: 170px;
+    height: 25px;
+}
+
+#taparDerechaCdistribuidora{
+    background:#EAEAEA;
+    position: absolute;
+    bottom: 10px;
+    width: 290px;
+    height: 25px;
+    right: 0;
+    margin-right: -50px;
+}

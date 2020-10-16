@@ -1,0 +1,31 @@
+#txtSidebarItem{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: white;
+}
+
+#txtSidebarItem:hover{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 18px;
+    color: white;
+}
+
+#txtSidebarItemHover{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 18px;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+#menuItemSidebar{
+    margin-top: -8px;
+}

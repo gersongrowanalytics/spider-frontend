@@ -1,0 +1,52 @@
+#contenedoraSliderCategorias{
+    margin-left: -32px;
+    margin-top: -32px;
+    margin-bottom: -80px;
+    width: 106%;
+}
+
+#contenedorCarouselImg{
+    
+    align-self: center;
+    width: 500px;
+}
+
+#txtTituloCarousel{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+#txtSubTitutloCarousel{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+#btnVerDetalle{
+    margin-top: 32px;
+    background: #FFFFFF;
+    border-radius: 83px;
+    width: 244px;
+    height: 71px;
+    display: flex;
+    place-content: center;
+    cursor: pointer;
+}
+
+#txtVerDetalle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    color: #4D4D4D;
+    align-self: center;
+}
