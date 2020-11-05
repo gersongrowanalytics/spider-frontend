@@ -40,7 +40,7 @@ const AppCanalTradicional = () => {
             url     : "negocio"
         },
         {
-            nombre  : "Comercial",
+            nombre  : "Comercial YTD",
             imagen  : "http://backs.gavsistemas.com/Spider/img/CanalTradicional/comercial.png",
             url     : "comercial"
         },

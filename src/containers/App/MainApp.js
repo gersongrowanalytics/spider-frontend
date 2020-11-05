@@ -119,6 +119,10 @@ const MainApp = () => {
               {/* {footerText} */}
               <Row className="gx-text-center" style={{alignItems:'center'}}>
                 <Col xl={4} 
+                  xs={4}
+                  md={4}
+                  sm={4}
+
                   style={{ 
                     marginTop:'5px',
                     fontFamily:'Roboto',
@@ -130,11 +134,15 @@ const MainApp = () => {
                 >
                   © Grow Analytics 2020
                 </Col>
-                <Col xl={16} >
+                <Col xl={16} xs={16} md={16} sm={16}>
                   {/* <img alt="" width="103px" height="50px" src={require("assets/images/logofooter.png")} /> */}
                 </Col>
                 <Col 
                   xl={4} 
+                  xs={4}
+                  md={4}
+                  sm={4}
+
                   style={{ 
                     marginTop:'5px',
                     fontFamily:'Roboto',
