@@ -8,9 +8,9 @@ const Negocio = () => {
             <AppCanalTradicional/>
             <div style={{marginLeft:'-30px', position: 'relative'}}>
                 <iframe
-                    width="102%"
+                    width="103%"
                     height="900"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiMDEwODkwZWItYTZmNS00YjU2LWJlM2MtMTg1OTUwNzMyN2M4IiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNDY0ZGZmNDQtOWE4MS00YzIwLWIzN2UtZDcwMGNmMmU4M2Q3IiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9"
                     frameborder="0"
                 ></iframe>
                 <div id="taparIzqcdistribuidora">

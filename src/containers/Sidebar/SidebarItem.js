@@ -56,19 +56,20 @@ class SidebarItem extends React.Component {
         this.setState({
             menuItemCanalModerno          : false,
             menuItemPromociones     : false,
-            menuItemGuiaGrow        : false,
-            menuItemCargaArchivo    : false,
-            menuItemUsuarios        : false,
-            menuItemRebate          : false,
-            menuItemTiposUsuarios   : false,
+            menuItemConvenienceStore    : false,
+            menuItemEcommerce        : false,
+            menuItemTradeMarketing          : false,
+            menuItemSpiderData   : false,
+            menuItemCanalTradicional   : false,
 
-            seleccionoVentas        : false,
+            seleccionoConvenienceStore        : false,
             seleccionoPromociones   : false,
-            seleccionoGuia          : false,
+            seleccionoCanalModerno          : false,
             seleccionoCarga         : false,
-            seleccionoUsuarios      : false,
-            seleccionoRebate        : false,
-            seleccionoTiposUsuarios : false,
+            seleccionoEcommerce      : false,
+            seleccionoTradeMarketing        : false,
+            seleccionoSpiderData : false,
+            seleccionoCanalTradicional : false,
         })
 
         this.setState({
@@ -227,28 +228,7 @@ class SidebarItem extends React.Component {
                     )
                 }
 
-                {
-                    funPermisosObtenidos(
-                        this.props.permisos,
-                        PERMISO_MODULO_SPIDER_DATA,
-                        <Menu.Item key="sistema/spiderData" id="menuItemSidebar">
-                            <Link to="/sistema/spiderData" 
-                                onMouseEnter={() => {this.funActivarHover('menuItemSpiderData', 'SpiderData')}} 
-                                onMouseLeave={() => {this.funDesactivarHover('menuItemSpiderData', 'SpiderData')}}
-                                onClick={() => {this.funSeleccionarMenu('menuItemSpiderData', 'SpiderData')}}
-                            >
-                                <img alt="" src={require("assets/images/iconos/spiderData.png")} style={{ marginRight:'15px' }} width="25px" />
-                                <span 
-                                    id={
-                                        this.state.menuItemSpiderData == true
-                                        ? "txtSidebarItemHover"
-                                        : "txtSidebarItem"
-                                    }
-                                >Trade Marketing</span>
-                            </Link>
-                        </Menu.Item>
-                    )
-                }
+                
 
                 {
                     funPermisosObtenidos(
@@ -267,7 +247,7 @@ class SidebarItem extends React.Component {
                                         ? "txtSidebarItemHover"
                                         : "txtSidebarItem"
                                     }
-                                >Trade Marketing</span>
+                                >Spider Data</span>
                             </Link>
                         </Menu.Item>
                     )

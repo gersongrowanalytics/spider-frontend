@@ -75,7 +75,7 @@ const Topbar = () => {
       </div>
       <div className="gx-linebar gx-mr-24">
         <Popover placement="bottomRight" content={userMenuOptions} trigger="click">
-          <span className="gx-avatar-name" id="nombreUsuarioLogeado">Miguel C. </span>
+          <span className="gx-avatar-name" id="nombreUsuarioLogeado">{localStorage.getItem('distribuidora')}</span>
           <Avatar src={require('assets/images/iconos/iconoUsuario.png')} //150*150
             className="gx-size-35 gx-pointer gx-mr-3" alt=""/>
         </Popover>

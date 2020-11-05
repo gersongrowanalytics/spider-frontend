@@ -115,8 +115,8 @@ const AppCategorias = () => {
                             display:'flex'
                         }}>
                             <div id="contenedorCarouselImg">
-                                <div id="txtTituloCarousel">Adaptabilidad para generar resultados</div>
-                                <div id="txtSubTitutloCarousel">Lorem ipsum</div>
+                                <div id="txtTituloCarousel">Bienvenidos a la Plataforma Spider Kimberly Clark</div>
+                                {/* <div id="txtSubTitutloCarousel">lorem</div> */}
                                 <div id="btnVerDetalle">
                                     <div id="txtVerDetalle">Ver detalles</div>
                                 </div>
@@ -136,8 +136,8 @@ const AppCategorias = () => {
                             display:'flex'
                         }}>
                             <div id="contenedorCarouselImg">
-                                <div id="txtTituloCarousel">Adaptabilidad para generar resultados</div>
-                                <div id="txtSubTitutloCarousel">Lorem ipsum</div>
+                                <div id="txtTituloCarousel">Bienvenidos al Canal Moderno Grow</div>
+                                {/* <div id="txtSubTitutloCarousel">Bienvenidos a la plataforma Spider Kimberly Klark</div> */}
                                 <div id="btnVerDetalle">
                                     <div id="txtVerDetalle">Ver detalles</div>
                                 </div>
@@ -157,8 +157,8 @@ const AppCategorias = () => {
                             display:'flex'
                         }}>
                             <div id="contenedorCarouselImg">
-                                <div id="txtTituloCarousel">Adaptabilidad para generar resultados</div>
-                                <div id="txtSubTitutloCarousel">Lorem ipsum</div>
+                                <div id="txtTituloCarousel">Bienvenidos a Ecommerce Grow</div>
+                                {/* <div id="txtSubTitutloCarousel">Lorem ipsum</div> */}
                                 <div id="btnVerDetalle">
                                     <div id="txtVerDetalle">Ver detalles</div>
                                 </div>
