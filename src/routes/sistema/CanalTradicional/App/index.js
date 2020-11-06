@@ -7,27 +7,27 @@ const AppCanalTradicional = () => {
 
     /**
      * CAROUSEL
-     * http://backs.gavsistemas.com/Spider/img/CanalTradicional/comercial.png
-     * http://backs.gavsistemas.com/Spider/img/CanalTradicional/distribuidora.png
-     * http://backs.gavsistemas.com/Spider/img/CanalTradicional/negocio.png
-     * http://backs.gavsistemas.com/Spider/img/CanalTradicional/otros.png
-     * http://backs.gavsistemas.com/Spider/img/CanalTradicional/tendero.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/comercial.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/distribuidora.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/negocio.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/otros.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/tendero.png
      * 
      * 
      * CATEGORIAS
-     * http://backs.gavsistemas.com/Spider/img/Categorias/CanalModerno.png
-     * http://backs.gavsistemas.com/Spider/img/Categorias/CanalTradicional.png
-     * http://backs.gavsistemas.com/Spider/img/Categorias/Conveni.png
-     * http://backs.gavsistemas.com/Spider/img/Categorias/Ecommerce.png
-     * http://backs.gavsistemas.com/Spider/img/Categorias/TradeMarketing.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/CanalModerno.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/CanalTradicional.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/Conveni.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/Ecommerce.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/TradeMarketing.png
      * 
      * 
      * ICONOS DE CATEGORIAS
-     * http://backs.gavsistemas.com/Spider/img/Categorias/Iconos/CanalModerno.png
-     * http://backs.gavsistemas.com/Spider/img/Categorias/Iconos/CanalTradicional.png
-     * http://backs.gavsistemas.com/Spider/img/Categorias/Iconos/Convenience.png
-     * http://backs.gavsistemas.com/Spider/img/Categorias/Iconos/Ecommerce.png
-     * http://backs.gavsistemas.com/Spider/img/Categorias/Iconos/TradeMarketing.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/Iconos/CanalModerno.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/Iconos/CanalTradicional.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/Iconos/Convenience.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/Iconos/Ecommerce.png
+     * https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/Iconos/TradeMarketing.png
      * 
      * 
      * 
@@ -36,27 +36,27 @@ const AppCanalTradicional = () => {
     const canales = [
         {
             nombre  : "Negocio",
-            imagen  : "http://backs.gavsistemas.com/Spider/img/CanalTradicional/negocio.png",
+            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/negocio.png",
             url     : "negocio"
         },
         {
             nombre  : "Comercial YTD",
-            imagen  : "http://backs.gavsistemas.com/Spider/img/CanalTradicional/comercial.png",
+            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/comercial.png",
             url     : "comercial"
         },
         {
             nombre  : "Distribuidora",
-            imagen  : "http://backs.gavsistemas.com/Spider/img/CanalTradicional/distribuidora.png",
+            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/distribuidora.png",
             url     : "distribuidora"
         },
         {
             nombre  : "Tendero",
-            imagen  : "http://backs.gavsistemas.com/Spider/img/CanalTradicional/tendero.png",
+            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/tendero.png",
             url     : "tendero"
         },
         {
             nombre  : "Otros",
-            imagen  : "http://backs.gavsistemas.com/Spider/img/CanalTradicional/otros.png",
+            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/otros.png",
             url     : "otros"
         }
     ]

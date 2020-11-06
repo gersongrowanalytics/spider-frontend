@@ -9,7 +9,7 @@ const index = () => {
                 <iframe
                     width="103%"
                     height="900"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiMDEwODkwZWItYTZmNS00YjU2LWJlM2MtMTg1OTUwNzMyN2M4IiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9&pageName=ReportSection28e304cb131872a6db42"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiMmNiYjJhN2YtM2NkYy00ZTc4LTkxZjMtYTgwOWUyZWRkMGJkIiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9"
                     frameborder="0"
                 ></iframe>
                 {/* <div id="botonComercial">

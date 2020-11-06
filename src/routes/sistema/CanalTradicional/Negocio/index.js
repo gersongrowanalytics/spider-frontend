@@ -10,7 +10,7 @@ const Negocio = () => {
                 <iframe
                     width="103%"
                     height="900"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiNDY0ZGZmNDQtOWE4MS00YzIwLWIzN2UtZDcwMGNmMmU4M2Q3IiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNDY0ZGZmNDQtOWE4MS00YzIwLWIzN2UtZDcwMGNmMmU4M2Q3IiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9&pageName=ReportSection7e1d8be48676a8413c0d"
                     frameborder="0"
                 ></iframe>
                 <div id="taparIzqcdistribuidora">
