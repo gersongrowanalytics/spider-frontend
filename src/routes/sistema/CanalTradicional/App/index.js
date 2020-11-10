@@ -35,27 +35,30 @@ const AppCanalTradicional = () => {
 
     const canales = [
         {
-            nombre  : "Negocio",
+            nombre  : ["SELL IN & SELL OUT", "(PERFORMANCE YTD)"],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/negocio.png",
             url     : "negocio"
         },
         {
-            nombre  : "Comercial YTD",
+            // nombre  : "SELL OUT PERFORMANCE\n(YTD OVERVIEW)",
+            nombre  : ["SELL OUT PERFORMANCE", "(YTD OVERVIEW)"],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/comercial.png",
             url     : "comercial"
         },
         {
-            nombre  : "Distribuidora",
+            // nombre  : "SELL OUT PERFORMANCE\n(MTD OVERVIEW)",
+            nombre  : ["SELL OUT PERFORMANCE", "(MTD OVERVIEW)"],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/distribuidora.png",
             url     : "distribuidora"
         },
         {
-            nombre  : "Tendero",
+            // nombre  : "FIELD SALES\nEXECUTOR",
+            nombre  : ["FIELD SALES", "EXECUTOR"],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/tendero.png",
             url     : "tendero"
         },
         {
-            nombre  : "Otros",
+            nombre  : ["Otros", ""],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/otros.png",
             url     : "otros"
         }

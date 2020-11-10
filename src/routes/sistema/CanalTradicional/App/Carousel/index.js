@@ -206,7 +206,7 @@ class Slide extends React.Component {
                 backgroundRepeat:'no-repeat',
               }}
             >
-              <span id="tituloCanal">{nombre}</span>
+              <div id="tituloCanal">{nombre[0]}<br/>{nombre[1]}</div>
             </div>
         </div>
         </Link>
