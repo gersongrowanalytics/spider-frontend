@@ -117,8 +117,8 @@ class SidebarItem extends React.Component {
                     funPermisosObtenidos(
                         this.props.permisos,
                         PERMISO_MODULO_CANAL_TRADICIONAL,
-                        <Menu.Item key="sistema/canal/tradicional" id="menuItemSidebar">
-                            <Link to="/sistema/canal/tradicional" 
+                        <Menu.Item key="sistema/canalTradicional/negocio" id="menuItemSidebar">
+                            <Link to="/sistema/canalTradicional/negocio" 
                                 onMouseEnter={() => {this.funActivarHover('menuItemCanalTradicional', 'CanalTradicional')}} 
                                 onMouseLeave={() => {this.funDesactivarHover('menuItemCanalTradicional', 'CanalTradicional')}}
                                 onClick={() => {this.funSeleccionarMenu('menuItemCanalTradicional', 'CanalTradicional')}}
