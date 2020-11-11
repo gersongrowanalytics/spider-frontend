@@ -35,30 +35,30 @@ const AppCanalTradicional = () => {
 
     const canales = [
         {
-            nombre  : ["SELL IN & SELL OUT", "(PERFORMANCE YTD)"],
+            nombre  : ["KC: SELL IN & SELL OUT", "(PERFORMANCE YTD - SOLES NIV)"],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/negocio.png",
             url     : "negocio"
         },
         {
             // nombre  : "SELL OUT PERFORMANCE\n(YTD OVERVIEW)",
-            nombre  : ["SELL OUT PERFORMANCE", "(YTD OVERVIEW)"],
+            nombre  : ["SELL OUT PERFORMANCE", "(YTD OVERVIEW - SOLES DISTRIBUIDOR)"],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/comercial.png",
             url     : "comercial"
         },
         {
             // nombre  : "SELL OUT PERFORMANCE\n(MTD OVERVIEW)",
-            nombre  : ["SELL OUT PERFORMANCE", "(MTD OVERVIEW)"],
+            nombre  : ["SELL OUT PERFORMANCE", "(MTD OVERVIEW - SOLES DISTRIBUIDOR)"],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/distribuidora.png",
             url     : "distribuidora"
         },
         {
             // nombre  : "FIELD SALES\nEXECUTOR",
-            nombre  : ["FIELD SALES", "EXECUTOR"],
+            nombre  : ["FIELD SALES EXECUTION", "(SOLES DISTRIBUIDOR)"],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/tendero.png",
             url     : "tendero"
         },
         {
-            nombre  : ["Otros", ""],
+            nombre  : ["OTROS", ""],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/otros.png",
             url     : "otros"
         }
