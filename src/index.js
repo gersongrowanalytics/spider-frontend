@@ -5,6 +5,7 @@ import NextApp from './NextApp';
 import registerServiceWorker from './registerServiceWorker';
 // Add this import:
 import {AppContainer} from 'react-hot-loader';
+import * as serviceWorker from './serviceWorker';
 
 // Wrap the rendering in a function:
 const render = Component => {
@@ -19,6 +20,7 @@ const render = Component => {
 
 // Do this once
 registerServiceWorker();
+// serviceWorker.register();
 
 // Render once
 render(NextApp);
