@@ -242,3 +242,32 @@ export const obtenerPermisosUsuarioReducer = () => async (dispatch, getState) =>
     });
 }
 
+export const recuperarContrasenia = (correo) => async (dispatch, getState) => {
+  await fetch(config.api+'recuperarContrasenia',
+    {
+      mode:'cors',
+      method: 'POST',
+      body: JSON.stringify(correo),
+      headers: {
+        'Accept' : 'application/json',
+        'Content-type' : 'application/json'
+      }
+    }
+  )
+  .then( async res => {
+    await dispatch(estadoRequestReducer(res.status))
+    return res.json()
+  })
+  .then(data => {
+    const estadoRequest = getState().estadoRequest.init_request
+    if(estadoRequest == true){
+      if(data.respuesta == true){
+        message.success(data.mensaje) 
+      }else{
+        message.error(data.mensaje) 
+      }
+    }
+  }).catch((error)=> {
+    message.error(error) 
+  });
+}

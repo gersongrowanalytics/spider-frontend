@@ -5,7 +5,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from "react-router-dom"
 import {
   hideMessage,
-  loginReducer
+  loginReducer,
+  recuperarContrasenia
 } from "appRedux/actions/Auth";
 import CircularProgress from "components/CircularProgress/index";
 import './recuperar.css'
@@ -34,7 +35,7 @@ const Recuperar =()=> {
 
   const onFinish = async values =>  {
     console.log("finish",values)
-    dispatch(loginReducer(values))
+    dispatch(recuperarContrasenia(values))
   };
 
   return (
