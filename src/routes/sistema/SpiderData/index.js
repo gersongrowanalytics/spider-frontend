@@ -6,7 +6,7 @@ const SpiderData = () => {
     return (
         <Row>
             <Col xl={4} md={4} sm={4} xs={4}></Col>
-            {
+            {/* {
                 [{},{},{},{}].map((data, posicion) => {
                     return (
                         <Col xl={4} md={4} sm={4}>
@@ -16,7 +16,33 @@ const SpiderData = () => {
                         </Col>
                     )
                 })
-            }
+            } */}
+
+            <Col xl={4} md={4} sm={4}>
+                <div className={"contenedorBloque"}>
+                    <a href='https://backend-spider-kimberly.grow-corporate.com/sistema/spiderData/Kimberly_PivotOnline.xlsx' download>Spider Pívot</a>
+                </div>
+            </Col>
+
+            <Col xl={4} md={4} sm={4}>
+                <div className={"contenedorBloque"}>
+                    <a href='https://backend-spider-kimberly.grow-corporate.com/sistema/spiderData/SISO%20YTD%20PERFORMANCE.xlsm' download>Spider Si & So Performance</a>
+                </div>
+            </Col>
+
+            <Col xl={4} md={4} sm={4}>
+                <div className={"contenedorBloquePlomo"}>
+                    <a>Descarga Spider Data 3</a>
+                </div>
+            </Col>
+
+            <Col xl={4} md={4} sm={4}>
+                <div className={"contenedorBloquePlomo"}>
+                    <a>Descarga Spider Data 4</a>
+                </div>
+            </Col>
+
+
             <Col xl={4} md={4} sm={4} xs={4}></Col>
         </Row>
     )
