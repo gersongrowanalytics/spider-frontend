@@ -20,7 +20,7 @@ const SpiderData = () => {
 
             <Col xl={4} md={4} sm={4}>
                 <div className={"contenedorBloque"}>
-                    <a href='https://backend-spider-kimberly.grow-corporate.com/sistema/spiderData/Kimberly_PivotOnline.xlsx' download>Spider Pívot</a>
+                    <a href='https://backend-spider-kimberly.grow-corporate.com/sistema/spiderData/Kimberly_PivotOnline_principal.xlsx' download>Spider Pívot</a>
                 </div>
             </Col>
 
