@@ -10,7 +10,10 @@ import {
     PERMISO_MODULO_ECOMMERCE,
     PERMISO_MODULO_TRADE_MARKETING,
     PERMISO_MODULO_SPIDER_DATA,
-    PERMISO_MODULO_CANAL_TRADICIONAL
+    PERMISO_MODULO_CANAL_TRADICIONAL,
+    PERMISO_MODULO_CONTROL_ACCESOS,
+    PERMISO_SUBMODULO_PERMISOS,
+    PERMISO_SUBMODULO_TIPOS_USUARIOS,
 } from "constants/PermisosTypes"
 
 const MenuItemGroup = Menu.ItemGroup;
@@ -25,6 +28,8 @@ class SidebarItem extends React.Component {
             menuItemTradeMarketing   : false,
             menuItemSpiderData       : false,
             menuItemCanalTradicional : false,
+            menuSubItemPermisos      : false,
+            menuSubItemTiposUsuarios : false,
 
             seleccionoConvenienceStore : false,
             seleccionoCanalModerno     : false,
@@ -32,6 +37,8 @@ class SidebarItem extends React.Component {
             seleccionoTradeMarketing   : false,
             seleccionoSpiderData       : false,
             seleccionoCanalTradicional : false,
+            seleccionoSubItemPermisos  : false,
+            seleccionoSubItemTiposUsuarios  : false,
         }
         this.funActivarHover = this.funActivarHover.bind(this)
         this.funSeleccionarMenu = this.funSeleccionarMenu.bind(this)
@@ -54,22 +61,26 @@ class SidebarItem extends React.Component {
 
     funSeleccionarMenu(nombre, nombreSelecciono){
         this.setState({
-            menuItemCanalModerno          : false,
-            menuItemPromociones     : false,
-            menuItemConvenienceStore    : false,
-            menuItemEcommerce        : false,
-            menuItemTradeMarketing          : false,
-            menuItemSpiderData   : false,
-            menuItemCanalTradicional   : false,
+            menuItemCanalModerno      : false,
+            menuItemPromociones       : false,
+            menuItemConvenienceStore  : false,
+            menuItemEcommerce         : false,
+            menuItemTradeMarketing    : false,
+            menuItemSpiderData        : false,
+            menuItemCanalTradicional  : false,
+            menuSubItemPermisos       : false,
+            menuSubItemTiposUsuarios  : false,
 
-            seleccionoConvenienceStore        : false,
-            seleccionoPromociones   : false,
-            seleccionoCanalModerno          : false,
-            seleccionoCarga         : false,
-            seleccionoEcommerce      : false,
-            seleccionoTradeMarketing        : false,
-            seleccionoSpiderData : false,
-            seleccionoCanalTradicional : false,
+            seleccionoConvenienceStore  : false,
+            seleccionoPromociones       : false,
+            seleccionoCanalModerno      : false,
+            seleccionoCarga             : false,
+            seleccionoEcommerce         : false,
+            seleccionoTradeMarketing    : false,
+            seleccionoSpiderData        : false,
+            seleccionoCanalTradicional  : false,
+            seleccionoSubItemPermisos   : false,
+            seleccionoSubItemTiposUsuarios   : false,
         })
 
         this.setState({
@@ -88,7 +99,8 @@ class SidebarItem extends React.Component {
                 <MenuItemGroup key="main" className="gx-menu-group" title={null}>
                 <Menu.Item key="#">
                     <img alt="" src={require("assets/images/iconos/ejecutivo.png")} style={{ marginRight:'15px' }} width="26px" />
-                    <span id="txtSidebarItem">{"Nombre de Ejecutivo"}</span>
+                    {/* <span id="txtSidebarItem">{"Nombre de Ejecutivo"}</span> */}
+                    <span id="txtSidebarItem">{localStorage.getItem('distribuidora')}</span>
                 </Menu.Item>
                 {/* {
                     funPermisosObtenidos(
@@ -140,8 +152,8 @@ class SidebarItem extends React.Component {
                     funPermisosObtenidos(
                         this.props.permisos,
                         PERMISO_MODULO_CANAL_MODERNO,
-                        <Menu.Item key="sistema/canal/moderno" id="menuItemSidebar">
-                            <Link to="/sistema/canal/moderno" 
+                        <Menu.Item key="sistema/canalModerno/infant-child" id="menuItemSidebar">
+                            <Link to="/sistema/canalModerno/infant-child" 
                                 onMouseEnter={() => {this.funActivarHover('menuItemCanalModerno', 'CanalModerno')}} 
                                 onMouseLeave={() => {this.funDesactivarHover('menuItemCanalModerno', 'CanalModerno')}}
                                 onClick={() => {this.funSeleccionarMenu('menuItemCanalModerno', 'CanalModerno')}}
@@ -252,6 +264,75 @@ class SidebarItem extends React.Component {
                         </Menu.Item>
                     )
                 }
+
+                {/* {
+                    funPermisosObtenidos(
+                        this.props.permisos,
+                        PERMISO_MODULO_CONTROL_ACCESOS,
+                        <Menu.SubMenu 
+                            key="dashboard"
+                            title={
+                                <span> <i className="icon icon-dasbhoard"/><span> Control Accesos </span></span>
+                            }>
+                            
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_PERMISOS,
+                                    <Menu.Item key="sistema/controles/accesos/permisos" id="menuItemSidebar">
+                                        <Link to="/sistema/controles/accesos/permisos" 
+                                            onMouseEnter={() => {this.funActivarHover('menuSubItemPermisos', 'SubItemPermisos')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuSubItemPermisos', 'SubItemPermisos')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuSubItemPermisos', 'SubItemPermisos')}}
+                                        >
+                                            <img 
+                                                alt="" 
+                                                src={require("assets/images/iconos/spiderData.png")} 
+                                                style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuSubItemPermisos == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Permisos</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_TIPOS_USUARIOS,
+                                    <Menu.Item key="sistema/controles/accesos/tiposUsuarios" id="menuItemSidebar">
+                                        <Link to="/sistema/controles/accesos/tiposUsuarios" 
+                                            onMouseEnter={() => {this.funActivarHover('menuSubItemTiposUsuarios', 'SubItemTiposUsuarios')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuSubItemTiposUsuarios', 'SubItemTiposUsuarios')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuSubItemTiposUsuarios', 'SubItemTiposUsuarios')}}
+                                        >
+                                            <img 
+                                                alt="" 
+                                                src={require("assets/images/iconos/spiderData.png")} 
+                                                style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuSubItemTiposUsuarios == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Tipos de Usuarios</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+                            
+
+                        </Menu.SubMenu>
+                    )
+                } */}
+
+                
 
                 </MenuItemGroup>
                 <AppsNavigation/>

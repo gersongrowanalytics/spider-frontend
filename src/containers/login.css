@@ -137,6 +137,19 @@
     font-weight: normal;
 }
 
+#textoSolicitarNuevaCuenta{
+    position: absolute;
+    left: 59px;
+    top: 438px;
+    font-size: 12px;
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
 #inputUsuario{
     position: absolute;
     width: 290px;
@@ -212,7 +225,7 @@
     width: 290px;
     height: 49px;
     left: 59px;
-    top: 461px;
+    top: 475px;
     background: #3946AB;
     border-radius: 24px;    
     border: none;

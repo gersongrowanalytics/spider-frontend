@@ -44,10 +44,10 @@ const SidebarLogo = () => {
 
       <Link to="/" className="gx-site-logo">
         {navStyle === NAV_STYLE_NO_HEADER_MINI_SIDEBAR && width >= TAB_SIZE 
-          ?<img alt="lo" src={require("assets/images/logos/logoSpiderBlancoNegro.png")} /> 
+          ?<img alt="lo" src={require("assets/images/logos/LogoSpiderAppBlanco.png")} /> 
           :themeType === THEME_TYPE_LITE 
-            ?<img alt="lo" src={require("assets/images/logos/logoSpiderBlancoNegro.png")} /> 
-            :<img alt="lo" src={require("assets/images/logos/logoSpiderBlancoNegro.png")} /> 
+            ?<img alt="lo" src={require("assets/images/logos/LogoSpiderAppBlanco.png")} /> 
+            :<img alt="lo" src={require("assets/images/logos/LogoSpiderAppBlanco.png")} /> 
           }
             {/* // <img alt="logo2" src={require("assets/images/logo.png")}/>} */}
       </Link>

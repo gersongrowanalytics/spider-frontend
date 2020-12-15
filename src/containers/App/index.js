@@ -17,6 +17,7 @@ import MainApp from "./MainApp";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
 import Recuperar from "../Recuperar/Recuperar";
+import SolicitarNuevaCuenta from "../SolicitarNuevaCuenta/SolicitarNuevaCuenta";
 
 import {setInitUrl, obtenerPermisosUsuarioReducer} from "appRedux/actions/Auth";
 import {onLayoutTypeChange, onNavStyleChange, setThemeType} from "appRedux/actions/Setting";
@@ -157,6 +158,7 @@ const App = (props) => {
         <Switch>
           <Route exact path='/signin' component={SignIn}/>
           <Route exact path='/recuperar' component={Recuperar}/>
+          <Route exact path='/solicitarNuevaCuenta' component={SolicitarNuevaCuenta}/>
           <Route exact path='/signup' component={SignUp}/>
           <RestrictedRoute path={`${match.url}`} authUser={authUser} location={location}
                            component={MainApp}/>

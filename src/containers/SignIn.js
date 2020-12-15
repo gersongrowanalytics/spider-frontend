@@ -65,7 +65,7 @@ const SignIn =()=> {
             :"contenidoForm"
           }
         >
-          <img src={require('assets/images/logos/logoSpiderBlancoNegro.png')} alt=''  id="logoFormulario" />
+          <img src={require('assets/images/logos/LogoSpiderAppBlanco.png')} alt=''  id="logoFormulario" />
           <h1 className="tituloIniciarSesionLogin">Iniciar Sesión</h1>
           <br/>
           <Form
@@ -109,6 +109,9 @@ const SignIn =()=> {
               </div>
               <Link to="/recuperar">
                 <span id="textoOlvidasteContrasenas">¿Olvidaste tu contraseña? </span>
+              </Link>
+              <Link to="/solicitarNuevaCuenta">
+                <span id="textoSolicitarNuevaCuenta">Solicitar una nueva cuenta</span>
               </Link>
               <button
                 className="btnIniciar"

@@ -42,7 +42,7 @@ const AppCategorias = () => {
             caticonohover   : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/Categorias/Iconos/CanalModerno.png",
             catcolorhover   : "255, 61, 0, 0.8",
             catcolor        : "#FF3D00",
-            nombreUrl       : "canalModerno"
+            nombreUrl       : "canalModerno/infant-child"
         },
         {
             catnombre       : "Canal Tradicional",

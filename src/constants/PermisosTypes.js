@@ -6,6 +6,9 @@ export const PERMISO_MODULO_CONVENIENCE_STORE = 'modulo.conveniense.store'
 export const PERMISO_MODULO_ECOMMERCE         = 'modulo.ecommerce'
 export const PERMISO_MODULO_TRADE_MARKETING   = 'modulo.trade.marketing'
 export const PERMISO_MODULO_SPIDER_DATA       = 'modulo.spider.data'
+export const PERMISO_MODULO_CONTROL_ACCESOS   = 'modulo.control.accesos'
+export const PERMISO_SUBMODULO_PERMISOS       = 'modulo.control.accesos.submodulo.permisos'
+export const PERMISO_SUBMODULO_TIPOS_USUARIOS = 'modulo.control.accesos.submodulo.tiposUsuarios'
 
 
 

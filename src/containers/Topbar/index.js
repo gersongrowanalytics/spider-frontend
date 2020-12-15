@@ -63,7 +63,7 @@ const Topbar = () => {
           <Link to="/sistema/categorias">
             <img 
               style   = {{cursor:'pointer'}}
-              alt     = '' src={require('assets/images/logos/logoGrowColor.png')} 
+              alt     = '' src={require('assets/images/logos/LogoSpiderApp.png')} 
               width   = '115px' 
               height  = '55px' 
               id      = "logoTopbar"
