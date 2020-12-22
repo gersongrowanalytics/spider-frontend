@@ -23,7 +23,7 @@ export const ObtenerListaTiposUsuariosReducer = () => async (dispatch, getState)
 			mode:'cors',
 			method: 'POST',
 			body: JSON.stringify({
-                
+                'api_token'	   : localStorage.getItem('usutoken')
             }),
 			headers: {
 				'Accept' 	   : 'application/json',
@@ -113,7 +113,11 @@ export const CrearTipoUsuarioReducer = (values) => async (dispatch, getState) =>
 		{
 			mode:'cors',
 			method: 'POST',
-			body: JSON.stringify(values),
+			body: JSON.stringify({
+                'api_token'	    : localStorage.getItem('usutoken'),
+                'tpunombre'     : values.tpunombre,
+                'tpuprivilegio' : values.tpuprivilegio,
+            }),
 			headers: {
 				'Accept' 	   : 'application/json',
 				'Content-type' : 'application/json',

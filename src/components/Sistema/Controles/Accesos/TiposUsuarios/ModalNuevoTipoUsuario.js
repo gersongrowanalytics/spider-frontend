@@ -15,15 +15,16 @@ const ModalNuevoTipoUsuario = () => {
     } = useSelector(({controlesAccesosTiposUsuarios}) => controlesAccesosTiposUsuarios);
 
     const enviarFormulario = async values => {
-        console.log(values)
+        // console.log(values.tpuprivilegio)
         await dispatch(CrearTipoUsuarioReducer(values))
         await form.resetFields();
     }
 
     return (
         <Modal
-            title       = "Nuevo Permiso"
+            title       = "Nuevo Tipo de Usuario"
             visible     = {visibleModalNuevoTipoUsuario}
+            // visible     = {true}
             onOk        = { () => dispatch(VisibilidadModalNuevoTipoUsuarioReducer(false))}
             onCancel    = { () => dispatch(VisibilidadModalNuevoTipoUsuarioReducer(false))}
             footer      = {null}
@@ -34,29 +35,19 @@ const ModalNuevoTipoUsuario = () => {
                     onFinish= {enviarFormulario}
                     name    = "formNuevoRebate"   
                 > 
-                    <div id="tituloItemFormulario" >Permiso</div>
-                    <Form.Item label="" name="pemnombre">  
+                    <div id="tituloItemFormulario" >Nombre</div>
+                    <Form.Item label="" name="tpunombre">  
                         <Input 
                             className="gx-mb-3 gx-w-100" 
-                            rules={[{ required: true, message: 'Es necesario un Permiso' }]}
+                            rules={[{ required: true, message: 'Es necesario un Nombre' }]}
                             autoComplete={"off"}
                         />
                     </Form.Item>
 
-                    <div id="tituloItemFormulario" >Slug</div>
-                    <Form.Item label="" name="pemslug">  
+                    <div id="tituloItemFormulario" >Privilegio</div>
+                    <Form.Item label="" name="tpuprivilegio">  
                         <Input 
                             className="gx-mb-3 gx-w-100" 
-                            rules={[{ required: true, message: 'Es necesario un Slug' }]}
-                            autoComplete={"off"}
-                        />
-                    </Form.Item>
-
-                    <div id="tituloItemFormulario" >Ruta</div>
-                    <Form.Item label="" name="pemruta">  
-                        <Input 
-                            className="gx-mb-3 gx-w-100" 
-                            rules={[{ required: true, message: 'Es necesario una ruta' }]}
                             autoComplete={"off"}
                         />
                     </Form.Item>

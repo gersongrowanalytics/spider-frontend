@@ -15,7 +15,7 @@ const TiposUsuario = () => {
     } = useSelector(({controlesAccesosTiposUsuarios}) => controlesAccesosTiposUsuarios);
     
     useEffect(() => {
-        // dispatch(ObtenerListaTiposUsuariosReducer())
+        dispatch(ObtenerListaTiposUsuariosReducer())
     }, [])
 
     return (

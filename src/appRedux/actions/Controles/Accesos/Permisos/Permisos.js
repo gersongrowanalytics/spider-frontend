@@ -23,7 +23,7 @@ export const ObtenerListaPermisos = () => async (dispatch, getState) => {
 			mode:'cors',
 			method: 'POST',
 			body: JSON.stringify({
-                
+                'api_token'	   : localStorage.getItem('usutoken')
             }),
 			headers: {
 				'Accept' 	   : 'application/json',

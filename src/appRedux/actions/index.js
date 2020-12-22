@@ -6,3 +6,4 @@ export * from './Contact';
 export * from './EstadoRequest';
 export * from './Controles/Accesos/Permisos/Permisos';
 export * from './Controles/Accesos/TiposUsuarios/TiposUsuarios';
+export * from './Controles/Accesos/Usuarios/Usuarios';

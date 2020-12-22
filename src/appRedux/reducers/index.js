@@ -8,6 +8,7 @@ import Common from "./Common";
 import EstadoRequest from "./EstadoRequest";
 import Permisos from "./Controles/Accesos/Permisos/Permisos";
 import TiposUsuarios from "./Controles/Accesos/TiposUsuarios/TiposUsuarios";
+import Usuarios from "./Controles/Accesos/Usuarios/Usuarios";
 
 const createRootReducer = (history) => combineReducers({
   router                   : connectRouter(history),
@@ -19,6 +20,7 @@ const createRootReducer = (history) => combineReducers({
   estadoRequest            : EstadoRequest,
   controlesAccesosPermisos : Permisos,
   controlesAccesosTiposUsuarios : TiposUsuarios,
+  controlesAccesosUsuarios : Usuarios,
 });
 
 export default createRootReducer
