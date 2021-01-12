@@ -83,19 +83,19 @@ export const ArmarColumnasTablaUsuariosReducer = () => async (dispatch, getState
             width: 50,
         },
 
-        {
-            title: 'Correo',
-            dataIndex: 'usucorreo',
-            key: 'usucorreo',
-            width: 100,
-        },
+        // {
+        //     title: 'Correo',
+        //     dataIndex: 'usucorreo',
+        //     key: 'usucorreo',
+        //     width: 100,
+        // },
 
-        {
-            title: 'Tipo Usuario',
-            dataIndex: 'tpunombre',
-            key: 'tpunombre',
-            width: 100,
-        },
+        // {
+        //     title: 'Tipo Usuario',
+        //     dataIndex: 'tpunombre',
+        //     key: 'tpunombre',
+        //     width: 100,
+        // },
 
         {
             title: 'Usuario',

@@ -78,7 +78,7 @@ const ModalNuevoUsuario = () => {
 
                     <div id="tituloItemFormulario" >Contraseña</div>
                     <Form.Item label="" name="usucontrasena">  
-                        <Input 
+                        <Input.Password 
                             className="gx-mb-3 gx-w-100" 
                             autoComplete={"off"}
                         />

@@ -269,7 +269,7 @@ class SidebarItem extends React.Component {
                     )
                 }
 
-                {/* {
+                {
                     funPermisosObtenidos(
                         this.props.permisos,
                         PERMISO_MODULO_CONTROL_ACCESOS,
@@ -361,7 +361,7 @@ class SidebarItem extends React.Component {
 
                         </Menu.SubMenu>
                     )
-                } */}
+                }
 
                 
 
