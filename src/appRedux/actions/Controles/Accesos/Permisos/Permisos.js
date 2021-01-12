@@ -131,7 +131,12 @@ export const CrearPermisoReducer = (values) => async (dispatch, getState) => {
 		{
 			mode:'cors',
 			method: 'POST',
-			body: JSON.stringify(values),
+			body: JSON.stringify({
+                'pemnombre' : values.pemnombre,
+                'pemruta'   : values.pemruta,
+                'pemslug'   : values.pemslug,
+                'api_token'	: localStorage.getItem('usutoken')
+            }),
 			headers: {
 				'Accept' 	   : 'application/json',
 				'Content-type' : 'application/json',

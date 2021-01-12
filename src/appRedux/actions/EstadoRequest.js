@@ -26,7 +26,7 @@ export const estadoRequestReducer = (estado) => (dispatch) => {
             payload: estado
         })
         retornar = false
-        // dispatch(userSignOut())
+        dispatch(userSignOut())
     }else if(estado == 404){
         
         dispatch({

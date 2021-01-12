@@ -158,8 +158,13 @@ export const CrearUsuarioReducer = (values) => async (dispatch, getState) => {
 			mode:'cors',
 			method: 'POST',
 			body: JSON.stringify({
-                'api_token'	: localStorage.getItem('usutoken'),
-                
+                'api_token'	         : localStorage.getItem('usutoken'),
+                'usucorreo'          : values.usucorreo,
+                'usuusuario'         : values.usuusuario,
+                'usucontrasena'      : values.usucontrasena,
+                'pernombre'          : values.pernombre,
+                'perapellidopaterno' : values.perapellidopaterno,
+                'perapellidomaterno' : values.perapellidomaterno
             }),
 			headers: {
 				'Accept' 	   : 'application/json',

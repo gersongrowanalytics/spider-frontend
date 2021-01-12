@@ -199,48 +199,48 @@ export const mostrarFormReducer = (accion) => {
   }
 }
 
-export const obtenerPermisosUsuarioReducer = () => async (dispatch, getState) => {
-  	await fetch(config.api+'usuario/mostrar/permisos',
-		{
-			mode	: 'cors',
-			method	: 'POST',
-			body	: JSON.stringify({}),
-			headers: {
-				'Accept' 		: 'application/json',
-				'Content-type' 	: 'application/json',
-				'api_token'		: localStorage.getItem('usutoken')
-			}
-		}
-    )
-    .then( async res => {
-		await dispatch(estadoRequestReducer(res.status))
-		return res.json()
-    })
-    .then(data => {
-      	const estadoRequest = getState().estadoRequest.init_request
-      	if(estadoRequest == true){
-        	if(data.respuesta == true){
-            	dispatch({
-                	type: OBTENER_PERMISOS_USUARIO,
-                	payload: data.datos
-            	})
-			}else{
-				dispatch({
-					type	: OBTENER_PERMISOS_USUARIO,
-					payload	: data.datos
-				})
-			}
-      	}
-    }).catch((error)=> {
-		console.log('Obtener permisos')
-		console.log(error)
-		message.error('Lo sentimos, h,ubo un erro al momento de consultar tus permisos') 
-        dispatch({
-            type	: OBTENER_PERMISOS_USUARIO,
-            payload : []
-        })
-    });
-}
+// export const obtenerPermisosUsuarioReducer = () => async (dispatch, getState) => {
+//   	await fetch(config.api+'usuario/mostrar/permisos',
+// 		{
+// 			mode	: 'cors',
+// 			method	: 'POST',
+// 			body	: JSON.stringify({}),
+// 			headers: {
+// 				'Accept' 		: 'application/json',
+// 				'Content-type' 	: 'application/json',
+// 				'api_token'		: localStorage.getItem('usutoken')
+// 			}
+// 		}
+//     )
+//     .then( async res => {
+// 		await dispatch(estadoRequestReducer(res.status))
+// 		return res.json()
+//     })
+//     .then(data => {
+//       	const estadoRequest = getState().estadoRequest.init_request
+//       	if(estadoRequest == true){
+//         	if(data.respuesta == true){
+//             	dispatch({
+//                 	type: OBTENER_PERMISOS_USUARIO,
+//                 	payload: data.datos
+//             	})
+// 			}else{
+// 				dispatch({
+// 					type	: OBTENER_PERMISOS_USUARIO,
+// 					payload	: data.datos
+// 				})
+// 			}
+//       	}
+//     }).catch((error)=> {
+// 		console.log('Obtener permisos')
+// 		console.log(error)
+// 		message.error('Lo sentimos, h,ubo un erro al momento de consultar tus permisos') 
+//         dispatch({
+//             type	: OBTENER_PERMISOS_USUARIO,
+//             payload : []
+//         })
+//     });
+// }
 
 export const recuperarContrasenia = (correo) => async (dispatch, getState) => {
   await fetch(config.api+'recuperarContrasenia',
@@ -269,5 +269,50 @@ export const recuperarContrasenia = (correo) => async (dispatch, getState) => {
     }
   }).catch((error)=> {
     message.error(error) 
+  });
+}
+
+export const obtenerPermisosUsuarioReducer = () => async (dispatch, getState) => {
+  await fetch(config.api+'usuario/mostrar/permisos',
+  {
+    mode	: 'cors',
+    method	: 'POST',
+    body	: JSON.stringify({
+      'api_token' : localStorage.getItem('usutoken')
+    }),
+    headers: {
+      'Accept' 		: 'application/json',
+      'Content-type' 	: 'application/json',
+      'api_token'		: localStorage.getItem('usutoken')
+    }
+  }
+  )
+  .then( async res => {
+    await dispatch(estadoRequestReducer(res.status))
+    return res.json()
+  })
+  .then(data => {
+      const estadoRequest = getState().estadoRequest.init_request
+      if(estadoRequest == true){
+        if(data.respuesta == true){
+            dispatch({
+                type: OBTENER_PERMISOS_USUARIO,
+                payload: data.datos
+            })
+    }else{
+      dispatch({
+        type	: OBTENER_PERMISOS_USUARIO,
+        payload	: data.datos
+      })
+    }
+      }
+  }).catch((error)=> {
+  console.log('Obtener permisos')
+  console.log(error)
+  message.error('Lo sentimos, hubo un erro al momento de consultar tus permisos') 
+      dispatch({
+          type	: OBTENER_PERMISOS_USUARIO,
+          payload : []
+      })
   });
 }

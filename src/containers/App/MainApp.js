@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Layout, Row, Col, Button} from "antd";
 import Sidebar from "../Sidebar/index";
 import HorizontalDefault from "../Topbar/HorizontalDefault/index";
@@ -27,6 +27,7 @@ import NoHeaderNotification from "../Topbar/NoHeaderNotification/index";
 import {useRouteMatch} from "react-router-dom";
 import Customizer from "../Customizer";
 import { CloseOutlined } from '@ant-design/icons';
+import {obtenerPermisosUsuarioReducer} from "appRedux/actions/Auth";
 
 const {Content, Footer} = Layout;
 
@@ -104,6 +105,9 @@ const MainApp = () => {
     }
   };
 
+  useEffect(() => {
+    dispatch(obtenerPermisosUsuarioReducer())
+  }, [])
 
   return (
     <Layout className="gx-app-layout" style={{background:'white'}}  >
