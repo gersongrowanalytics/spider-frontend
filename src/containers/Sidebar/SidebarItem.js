@@ -378,7 +378,33 @@ class SidebarItem extends React.Component {
                                                     ? "txtSidebarItemHover"
                                                     : "txtSidebarItem"
                                                 }
-                                            >otros</span>
+                                            >otross</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+{
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_TIPOS_USUARIOS,
+                                    <Menu.Item key="sistema/controles/accesos/usuarios" id="menuItemSidebar">
+                                        <Link to="/sistema/controles/accesos/usuarios" 
+                                            onMouseEnter={() => {this.funActivarHover('menuSubItemUsuarios', 'SubItemUsuarios')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuSubItemUsuarios', 'SubItemUsuarios')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuSubItemUsuarios', 'SubItemUsuarios')}}
+                                        >
+                                            <img 
+                                                alt="" 
+                                                src={require("assets/images/iconos/spiderData.png")} 
+                                                style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuSubItemUsuarios == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >cache</span>
                                         </Link>
                                     </Menu.Item>
                                 )
