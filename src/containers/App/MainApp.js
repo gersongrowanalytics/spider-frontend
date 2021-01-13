@@ -136,7 +136,7 @@ const MainApp = () => {
                     fontWeight:'bold'
                   }}
                 >
-                  © Grow Analytics 2020
+                  © Grow Analytics 2021
                 </Col>
                 <Col xl={16} xs={16} md={16} sm={16}>
                   {/* <img alt="" width="103px" height="50px" src={require("assets/images/logofooter.png")} /> */}
