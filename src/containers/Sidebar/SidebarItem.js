@@ -7,6 +7,7 @@ import {funPermisosObtenidos} from 'funciones/funPermiso.js'
 import {
     PERMISO_MODULO_CANAL_MODERNO,
     PERMISO_MODULO_CONVENIENCE_STORE,
+    PERMISO_MODULO_REPORTE_GERENCIAL,
     PERMISO_MODULO_ECOMMERCE,
     PERMISO_MODULO_TRADE_MARKETING,
     PERMISO_MODULO_SPIDER_DATA,
@@ -24,6 +25,7 @@ class SidebarItem extends React.Component {
         this.state = {
             menuItemCanalModerno     : false,
             menuItemConvenienceStore : false,
+            menuItemReporteGerencial : false,
             menuItemEcommerce        : false,
             menuItemTradeMarketing   : false,
             menuItemSpiderData       : false,
@@ -33,6 +35,7 @@ class SidebarItem extends React.Component {
             menuSubItemUsuarios      : false,
 
             seleccionoConvenienceStore : false,
+            seleccionoReporteGerencial : false,
             seleccionoCanalModerno     : false,
             seleccionoEcommerce        : false,
             seleccionoTradeMarketing   : false,
@@ -66,6 +69,7 @@ class SidebarItem extends React.Component {
             menuItemCanalModerno      : false,
             menuItemPromociones       : false,
             menuItemConvenienceStore  : false,
+            menuItemReporteGerencial  : false,
             menuItemEcommerce         : false,
             menuItemTradeMarketing    : false,
             menuItemSpiderData        : false,
@@ -75,6 +79,7 @@ class SidebarItem extends React.Component {
             menuSubItemUsuarios       : false,
 
             seleccionoConvenienceStore  : false,
+            seleccionoReporteGerencial  : false,
             seleccionoPromociones       : false,
             seleccionoCanalModerno      : false,
             seleccionoCarga             : false,
@@ -132,17 +137,17 @@ class SidebarItem extends React.Component {
                 {
                     funPermisosObtenidos(
                         this.props.permisos,
-                        PERMISO_MODULO_CONVENIENCE_STORE,
+                        PERMISO_MODULO_REPORTE_GERENCIAL,
                         <Menu.Item key="sistema/reportesGenerales" id="menuItemSidebar">
                             <Link to="/sistema/reportesGenerales" 
-                                onMouseEnter={() => {this.funActivarHover('menuItemConvenienceStore', 'ConvenienceStore')}} 
-                                onMouseLeave={() => {this.funDesactivarHover('menuItemConvenienceStore', 'ConvenienceStore')}}
-                                onClick={() => {this.funSeleccionarMenu('menuItemConvenienceStore', 'ConvenienceStore')}}
+                                onMouseEnter={() => {this.funActivarHover('menuItemReporteGerencial', 'ReporteGerencial')}} 
+                                onMouseLeave={() => {this.funDesactivarHover('menuItemReporteGerencial', 'ReporteGerencial')}}
+                                onClick={() => {this.funSeleccionarMenu('menuItemReporteGerencial', 'ReporteGerencial')}}
                             >
-                                <img alt="" src={require("assets/images/iconos/convenience.png")} style={{ marginRight:'15px' }} width="25px" />
+                                <img alt="" src={require("assets/images/iconos/reporteGerencial.png")} style={{ marginRight:'15px' }} width="25px" />
                                 <span 
                                     id={
-                                        this.state.menuItemConvenienceStore == true
+                                        this.state.menuItemReporteGerencial == true
                                         ? "txtSidebarItemHover"
                                         : "txtSidebarItem"
                                     }
@@ -193,6 +198,29 @@ class SidebarItem extends React.Component {
                                         : "txtSidebarItem"
                                     }
                                 >Canal Moderno</span>
+                            </Link>
+                        </Menu.Item>
+                    )
+                }
+
+                {
+                    funPermisosObtenidos(
+                        this.props.permisos,
+                        PERMISO_MODULO_CONVENIENCE_STORE,
+                        <Menu.Item key="sistema/convenienceStore" id="menuItemSidebar">
+                            <Link to="/sistema/convenienceStore" 
+                                onMouseEnter={() => {this.funActivarHover('menuItemConvenienceStore', 'ConvenienceStore')}} 
+                                onMouseLeave={() => {this.funDesactivarHover('menuItemConvenienceStore', 'ConvenienceStore')}}
+                                onClick={() => {this.funSeleccionarMenu('menuItemConvenienceStore', 'ConvenienceStore')}}
+                            >
+                                <img alt="" src={require("assets/images/iconos/convenience.png")} style={{ marginRight:'15px' }} width="25px" />
+                                <span 
+                                    id={
+                                        this.state.menuItemConvenienceStore == true
+                                        ? "txtSidebarItemHover"
+                                        : "txtSidebarItem"
+                                    }
+                                >Convenience Store</span>
                             </Link>
                         </Menu.Item>
                     )
