@@ -132,6 +132,29 @@ class SidebarItem extends React.Component {
                 {
                     funPermisosObtenidos(
                         this.props.permisos,
+                        PERMISO_MODULO_CONVENIENCE_STORE,
+                        <Menu.Item key="sistema/reportesGenerales" id="menuItemSidebar">
+                            <Link to="/sistema/reportesGenerales" 
+                                onMouseEnter={() => {this.funActivarHover('menuItemConvenienceStore', 'ConvenienceStore')}} 
+                                onMouseLeave={() => {this.funDesactivarHover('menuItemConvenienceStore', 'ConvenienceStore')}}
+                                onClick={() => {this.funSeleccionarMenu('menuItemConvenienceStore', 'ConvenienceStore')}}
+                            >
+                                <img alt="" src={require("assets/images/iconos/convenience.png")} style={{ marginRight:'15px' }} width="25px" />
+                                <span 
+                                    id={
+                                        this.state.menuItemConvenienceStore == true
+                                        ? "txtSidebarItemHover"
+                                        : "txtSidebarItem"
+                                    }
+                                >Reportes Generales</span>
+                            </Link>
+                        </Menu.Item>
+                    )
+                }
+                
+                {
+                    funPermisosObtenidos(
+                        this.props.permisos,
                         PERMISO_MODULO_CANAL_TRADICIONAL,
                         <Menu.Item key="sistema/canalTradicional/negocio" id="menuItemSidebar">
                             <Link to="/sistema/canalTradicional/negocio" 
@@ -170,29 +193,6 @@ class SidebarItem extends React.Component {
                                         : "txtSidebarItem"
                                     }
                                 >Canal Moderno</span>
-                            </Link>
-                        </Menu.Item>
-                    )
-                }
-
-                {
-                    funPermisosObtenidos(
-                        this.props.permisos,
-                        PERMISO_MODULO_CONVENIENCE_STORE,
-                        <Menu.Item key="sistema/conveniencestore" id="menuItemSidebar">
-                            <Link to="/sistema/conveniencestore" 
-                                onMouseEnter={() => {this.funActivarHover('menuItemConvenienceStore', 'ConvenienceStore')}} 
-                                onMouseLeave={() => {this.funDesactivarHover('menuItemConvenienceStore', 'ConvenienceStore')}}
-                                onClick={() => {this.funSeleccionarMenu('menuItemConvenienceStore', 'ConvenienceStore')}}
-                            >
-                                <img alt="" src={require("assets/images/iconos/convenience.png")} style={{ marginRight:'15px' }} width="25px" />
-                                <span 
-                                    id={
-                                        this.state.menuItemConvenienceStore == true
-                                        ? "txtSidebarItemHover"
-                                        : "txtSidebarItem"
-                                    }
-                                >Convenience Store</span>
                             </Link>
                         </Menu.Item>
                     )

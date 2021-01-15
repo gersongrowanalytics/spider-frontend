@@ -5,6 +5,7 @@ import CanalModerno from "./CanalModerno/index"
 import SpiderData from "./SpiderData/index"
 import AppCategorias from './App/index'
 import Controles from "./Controles/index"
+import ReportesGenerales from "./ReportesGenerales/ReportesGenerales"
 
 const Sistema = ({match}) => (
 	<>
@@ -14,6 +15,7 @@ const Sistema = ({match}) => (
 			<Route path={`${match.url}/canalModerno`} component={CanalModerno}/>
 			<Route path={`${match.url}/spiderData`} component={SpiderData}/>
 			<Route path={`${match.url}/controles`} component={Controles}/>
+			<Route path={`${match.url}/reportesGenerales`} component={ReportesGenerales}/>
 		</Switch>
 	</>
 );
