@@ -146,12 +146,12 @@ class SidebarItem extends React.Component {
                                         ? "txtSidebarItemHover"
                                         : "txtSidebarItem"
                                     }
-                                >Reportes Generales</span>
+                                >Reporte Gerencial</span>
                             </Link>
                         </Menu.Item>
                     )
                 }
-                
+
                 {
                     funPermisosObtenidos(
                         this.props.permisos,
