@@ -8,6 +8,7 @@ import {
     PERMISO_MODULO_CANAL_MODERNO,
     PERMISO_MODULO_CONVENIENCE_STORE,
     PERMISO_MODULO_REPORTE_GERENCIAL,
+    PERMISO_MODULO_REPORTE_FINANCIERO,
     PERMISO_MODULO_ECOMMERCE,
     PERMISO_MODULO_TRADE_MARKETING,
     PERMISO_MODULO_SPIDER_DATA,
@@ -23,16 +24,17 @@ class SidebarItem extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            menuItemCanalModerno     : false,
-            menuItemConvenienceStore : false,
-            menuItemReporteGerencial : false,
-            menuItemEcommerce        : false,
-            menuItemTradeMarketing   : false,
-            menuItemSpiderData       : false,
-            menuItemCanalTradicional : false,
-            menuSubItemPermisos      : false,
-            menuSubItemTiposUsuarios : false,
-            menuSubItemUsuarios      : false,
+            menuItemCanalModerno      : false,
+            menuItemConvenienceStore  : false,
+            menuItemReporteGerencial  : false,
+            menuItemEcommerce         : false,
+            menuItemTradeMarketing    : false,
+            menuItemSpiderData        : false,
+            menuItemCanalTradicional  : false,
+            menuSubItemPermisos       : false,
+            menuSubItemTiposUsuarios  : false,
+            menuSubItemUsuarios       : false,
+            menuItemReporteFinanciero : false,
 
             seleccionoConvenienceStore : false,
             seleccionoReporteGerencial : false,
@@ -44,6 +46,7 @@ class SidebarItem extends React.Component {
             seleccionoSubItemPermisos  : false,
             seleccionoSubItemTiposUsuarios  : false,
             seleccionoSubItemUsuarios  : false,
+            seleccionoReporteFinanciero  : false,
         }
         this.funActivarHover = this.funActivarHover.bind(this)
         this.funSeleccionarMenu = this.funSeleccionarMenu.bind(this)
@@ -77,7 +80,8 @@ class SidebarItem extends React.Component {
             menuSubItemPermisos       : false,
             menuSubItemTiposUsuarios  : false,
             menuSubItemUsuarios       : false,
-
+            menuItemReporteFinanciero : false,
+            
             seleccionoConvenienceStore  : false,
             seleccionoReporteGerencial  : false,
             seleccionoPromociones       : false,
@@ -90,6 +94,7 @@ class SidebarItem extends React.Component {
             seleccionoSubItemPermisos   : false,
             seleccionoSubItemTiposUsuarios   : false,
             seleccionoSubItemUsuarios   : false,
+            seleccionoReporteFinanciero : false
         })
 
         this.setState({
@@ -152,6 +157,29 @@ class SidebarItem extends React.Component {
                                         : "txtSidebarItem"
                                     }
                                 >Reporte Gerencial</span>
+                            </Link>
+                        </Menu.Item>
+                    )
+                }
+
+                {
+                    funPermisosObtenidos(
+                        this.props.permisos,
+                        PERMISO_MODULO_REPORTE_FINANCIERO,
+                        <Menu.Item key="sistema/reporteFinanciero" id="menuItemSidebar">
+                            <Link to="/sistema/reporteFinanciero" 
+                                onMouseEnter={() => {this.funActivarHover('menuItemReporteFinanciero', 'ReporteFinanciero')}} 
+                                onMouseLeave={() => {this.funDesactivarHover('menuItemReporteFinanciero', 'ReporteFinanciero')}}
+                                onClick={() => {this.funSeleccionarMenu('menuItemReporteFinanciero', 'ReporteFinanciero')}}
+                            >
+                                <img alt="" src={require("assets/images/iconos/ReporteFinanciero.png")} style={{ marginRight:'15px' }} width="25px" />
+                                <span 
+                                    id={
+                                        this.state.menuItemReporteFinanciero == true
+                                        ? "txtSidebarItemHover"
+                                        : "txtSidebarItem"
+                                    }
+                                >Reporte Financiero</span>
                             </Link>
                         </Menu.Item>
                     )
