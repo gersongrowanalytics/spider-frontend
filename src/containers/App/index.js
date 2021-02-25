@@ -156,7 +156,7 @@ const App = (props) => {
 
   return (
     <ConfigProvider locale={currentAppLocale.antd}>
-      <ClearCacheComponent />
+      {/* <ClearCacheComponent /> */}
       <IntlProvider
         locale={currentAppLocale.locale}
         messages={currentAppLocale.messages}>

@@ -32,7 +32,7 @@ function withClearCache(Component) {
             setIsLatestBuildDate(false);
             refreshCacheAndReload();
           } else {
-            setIsLatestBuildDate(true);
+            setIsLatestBuildDate(false);
           }
         });
     }, []);
