@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.17c8d6b5.chunk.css",
-    "main.js": "/static/js/main.574e87bd.chunk.js",
-    "main.js.map": "/static/js/main.574e87bd.chunk.js.map",
+    "main.js": "/static/js/main.762e929f.chunk.js",
+    "main.js.map": "/static/js/main.762e929f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5d96f3e5.js",
     "runtime-main.js.map": "/static/js/runtime-main.5d96f3e5.js.map",
     "static/css/2.4c16f742.chunk.css": "/static/css/2.4c16f742.chunk.css",
-    "static/js/2.78b580af.chunk.js": "/static/js/2.78b580af.chunk.js",
-    "static/js/2.78b580af.chunk.js.map": "/static/js/2.78b580af.chunk.js.map",
+    "static/js/2.8741a6ab.chunk.js": "/static/js/2.8741a6ab.chunk.js",
+    "static/js/2.8741a6ab.chunk.js.map": "/static/js/2.8741a6ab.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2effd7f452bdc70293e4cf0b79ce16b1.js": "/precache-manifest.2effd7f452bdc70293e4cf0b79ce16b1.js",
+    "precache-manifest.79893897e1bd448a5bda773913a6d1c7.js": "/precache-manifest.79893897e1bd448a5bda773913a6d1c7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4c16f742.chunk.css.map": "/static/css/2.4c16f742.chunk.css.map",
     "static/css/main.17c8d6b5.chunk.css.map": "/static/css/main.17c8d6b5.chunk.css.map",
-    "static/js/2.78b580af.chunk.js.LICENSE.txt": "/static/js/2.78b580af.chunk.js.LICENSE.txt",
+    "static/js/2.8741a6ab.chunk.js.LICENSE.txt": "/static/js/2.8741a6ab.chunk.js.LICENSE.txt",
     "static/media/LogoSpiderApp.png": "/static/media/LogoSpiderApp.43bcefbb.png",
     "static/media/LogoSpiderAppBlanco.png": "/static/media/LogoSpiderAppBlanco.cbba2665.png",
     "static/media/styles.css": "/static/media/gaxon.b1a63de8.svg",
@@ -21,13 +21,14 @@
     "static/media/logoGrowColor.png": "/static/media/logoGrowColor.5e31663f.png",
     "static/media/logoSpiderBlancoNegro.png": "/static/media/logoSpiderBlancoNegro.68075f11.png",
     "static/media/notifications.css": "/static/media/notification.c0d3c94c.eot",
+    "static/media/smartview.png": "/static/media/smartview.136e1280.png",
     "static/media/sprite-flags-24x24.css": "/static/media/sprite-flags-24x24.7ed12ca4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5d96f3e5.js",
     "static/css/2.4c16f742.chunk.css",
-    "static/js/2.78b580af.chunk.js",
+    "static/js/2.8741a6ab.chunk.js",
     "static/css/main.17c8d6b5.chunk.css",
-    "static/js/main.574e87bd.chunk.js"
+    "static/js/main.762e929f.chunk.js"
   ]
 }

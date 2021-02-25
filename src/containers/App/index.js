@@ -34,6 +34,11 @@ import {
   THEME_TYPE_DARK
 } from "../../constants/ThemeSetting";
 
+import withClearCache from "../../ClearCache";
+
+const ClearCacheComponent = withClearCache(MainApp);
+
+
 const RestrictedRoute = ({component: Component, location, authUser, ...rest}) =>
   <Route
     {...rest}
@@ -151,6 +156,7 @@ const App = (props) => {
 
   return (
     <ConfigProvider locale={currentAppLocale.antd}>
+      <ClearCacheComponent />
       <IntlProvider
         locale={currentAppLocale.locale}
         messages={currentAppLocale.messages}>

@@ -11,6 +11,7 @@ import {
     PERMISO_MODULO_REPORTE_FINANCIERO,
     PERMISO_MODULO_ECOMMERCE,
     PERMISO_MODULO_TRADE_MARKETING,
+    PERMISO_SUBMODULO_SMARTVIEW,
     PERMISO_MODULO_SPIDER_DATA,
     PERMISO_MODULO_CANAL_TRADICIONAL,
     PERMISO_MODULO_CONTROL_ACCESOS,
@@ -231,6 +232,64 @@ class SidebarItem extends React.Component {
                     )
                 }
 
+
+
+
+
+
+                {
+                    funPermisosObtenidos(
+                        this.props.permisos,
+                        PERMISO_MODULO_TRADE_MARKETING,
+                        <Menu.SubMenu 
+                            key="TradeMarketing"
+                            title={
+                                <div
+                                    style={{
+                                        marginTop: "-3px"
+                                    }}
+                                >
+                                    <img alt="" src={require("assets/images/iconos/tradeMarketing.png")} style={{ marginRight:'15px' }} width="25px" />
+                                        <div 
+                                            style={{
+                                                marginTop: "-40px",
+                                                marginLeft: "40px"
+                                            }}
+                                        >Trade Marketing</div>
+                                </div>
+                            }>
+                            
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_SMARTVIEW,
+                                    <div
+                                        onMouseEnter={() => {this.funActivarHover('menuItemTradeMarketing', 'TradeMarketing')}} 
+                                        onMouseLeave={() => {this.funDesactivarHover('menuItemTradeMarketing', 'TradeMarketing')}}
+                                        onClick={() => {this.funSeleccionarMenu('menuItemTradeMarketing', 'TradeMarketing')}}
+                                        style={{
+                                            marginLeft: "80px",
+                                            marginBottom:'8px'
+                                            
+                                        }}
+                                    >
+                                        <img alt="" src={require("assets/images/iconos/smartview.png")} style={{ marginRight:'15px' }} width="25px" />
+                                        <a 
+                                            id={
+                                                this.state.menuItemTradeMarketing == true
+                                                ? "txtSidebarItemHover"
+                                                : "txtSidebarItem"
+                                            }
+                                            href="http://leadsmartview.com" target="_blank">Smart View</a>
+                                    </div>
+                                    
+                                )
+                            }
+
+                        </Menu.SubMenu>
+                    )
+                }
+
                 {
                     funPermisosObtenidos(
                         this.props.permisos,
@@ -280,31 +339,6 @@ class SidebarItem extends React.Component {
                 {
                     funPermisosObtenidos(
                         this.props.permisos,
-                        PERMISO_MODULO_TRADE_MARKETING,
-                        <Menu.Item key="sistema/tradeMarketing" id="menuItemSidebar">
-                            <Link to="/sistema/tradeMarketing" 
-                                onMouseEnter={() => {this.funActivarHover('menuItemTradeMarketing', 'TradeMarketing')}} 
-                                onMouseLeave={() => {this.funDesactivarHover('menuItemTradeMarketing', 'TradeMarketing')}}
-                                onClick={() => {this.funSeleccionarMenu('menuItemTradeMarketing', 'TradeMarketing')}}
-                            >
-                                <img alt="" src={require("assets/images/iconos/ecommerce.png")} style={{ marginRight:'15px' }} width="25px" />
-                                <span 
-                                    id={
-                                        this.state.menuItemTradeMarketing == true
-                                        ? "txtSidebarItemHover"
-                                        : "txtSidebarItem"
-                                    }
-                                >Trade Marketing</span>
-                            </Link>
-                        </Menu.Item>
-                    )
-                }
-
-                
-
-                {
-                    funPermisosObtenidos(
-                        this.props.permisos,
                         PERMISO_MODULO_SPIDER_DATA,
                         <Menu.Item key="sistema/spiderData" id="menuItemSidebar">
                             <Link to="/sistema/spiderData" 
@@ -324,6 +358,14 @@ class SidebarItem extends React.Component {
                         </Menu.Item>
                     )
                 }
+
+                
+
+                
+
+                
+
+                
 
                 {
                     funPermisosObtenidos(
