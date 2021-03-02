@@ -280,7 +280,7 @@ class SidebarItem extends React.Component {
                                                 ? "txtSidebarItemHover"
                                                 : "txtSidebarItem"
                                             }
-                                            href="http://leadsmartview.com" target="_blank">Smart View</a>
+                                            href="http://leadsmartview.com" target="_blank">Inversiones GTN</a>
                                     </div>
                                     
                                 )
