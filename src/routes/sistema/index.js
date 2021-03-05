@@ -7,6 +7,7 @@ import AppCategorias from './App/index'
 import Controles from "./Controles/index"
 import ReportesGenerales from "./ReportesGenerales/ReportesGenerales"
 import ReporteFinanciero from "./ReporteFinanciero/ReporteFinanciero"
+import Prioridades from "./Prioridades/Prioridades"
 
 const Sistema = ({match}) => (
 	<>
@@ -18,6 +19,7 @@ const Sistema = ({match}) => (
 			<Route path={`${match.url}/controles`} component={Controles}/>
 			<Route path={`${match.url}/reportesGenerales`} component={ReportesGenerales}/>
 			<Route path={`${match.url}/reporteFinanciero`} component={ReporteFinanciero}/>
+			<Route path={`${match.url}/prioridades`} component={Prioridades}/>
 		</Switch>
 	</>
 );

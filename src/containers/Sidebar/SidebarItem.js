@@ -17,6 +17,11 @@ import {
     PERMISO_MODULO_CONTROL_ACCESOS,
     PERMISO_SUBMODULO_PERMISOS,
     PERMISO_SUBMODULO_TIPOS_USUARIOS,
+    PERMISO_MODULO_ICENTIVOS,
+    PERMISO_SUBMODULO_DRIVER_PERU,
+    PERMISO_SUBMODULO_BOLIVIA,
+    PERMISO_SUBMODULO_PRIORIDADES,
+    PERMISO_MODULO_COMITE
 } from "constants/PermisosTypes"
 
 const MenuItemGroup = Menu.ItemGroup;
@@ -36,6 +41,9 @@ class SidebarItem extends React.Component {
             menuSubItemTiposUsuarios  : false,
             menuSubItemUsuarios       : false,
             menuItemReporteFinanciero : false,
+            menuSubItemDriverPeru     : false,
+            menuSubItemBolivia        : false,
+            menuItemPrioridades       : false,
 
             seleccionoConvenienceStore : false,
             seleccionoReporteGerencial : false,
@@ -48,6 +56,9 @@ class SidebarItem extends React.Component {
             seleccionoSubItemTiposUsuarios  : false,
             seleccionoSubItemUsuarios  : false,
             seleccionoReporteFinanciero  : false,
+            seleccionoSubItemDriverPeru  : false,
+            seleccionoSubItemBolivia     : false,
+            seleccionoPrioridades        : false,
         }
         this.funActivarHover = this.funActivarHover.bind(this)
         this.funSeleccionarMenu = this.funSeleccionarMenu.bind(this)
@@ -82,6 +93,9 @@ class SidebarItem extends React.Component {
             menuSubItemTiposUsuarios  : false,
             menuSubItemUsuarios       : false,
             menuItemReporteFinanciero : false,
+            menuSubItemBolivia        : false,
+            menuSubItemDriverPeru     : false,
+            menuItemPrioridades       : false,
             
             seleccionoConvenienceStore  : false,
             seleccionoReporteGerencial  : false,
@@ -95,7 +109,10 @@ class SidebarItem extends React.Component {
             seleccionoSubItemPermisos   : false,
             seleccionoSubItemTiposUsuarios   : false,
             seleccionoSubItemUsuarios   : false,
-            seleccionoReporteFinanciero : false
+            seleccionoReporteFinanciero : false,
+            seleccionoSubItemDriverPeru : false,
+            seleccionoSubItemBolivia    : false,
+            seleccionoPrioridades       : false
         })
 
         this.setState({
@@ -140,51 +157,107 @@ class SidebarItem extends React.Component {
                     )
                 } */}
 
-                {
-                    funPermisosObtenidos(
-                        this.props.permisos,
-                        PERMISO_MODULO_REPORTE_GERENCIAL,
-                        <Menu.Item key="sistema/reportesGenerales" id="menuItemSidebar">
-                            <Link to="/sistema/reportesGenerales" 
-                                onMouseEnter={() => {this.funActivarHover('menuItemReporteGerencial', 'ReporteGerencial')}} 
-                                onMouseLeave={() => {this.funDesactivarHover('menuItemReporteGerencial', 'ReporteGerencial')}}
-                                onClick={() => {this.funSeleccionarMenu('menuItemReporteGerencial', 'ReporteGerencial')}}
-                            >
-                                <img alt="" src={require("assets/images/iconos/reporteGerencial.png")} style={{ marginRight:'15px' }} width="25px" />
-                                <span 
-                                    id={
-                                        this.state.menuItemReporteGerencial == true
-                                        ? "txtSidebarItemHover"
-                                        : "txtSidebarItem"
-                                    }
-                                >Reporte Gerencial</span>
-                            </Link>
-                        </Menu.Item>
-                    )
-                }
+
+
+
 
                 {
                     funPermisosObtenidos(
                         this.props.permisos,
-                        PERMISO_MODULO_REPORTE_FINANCIERO,
-                        <Menu.Item key="sistema/reporteFinanciero" id="menuItemSidebar">
-                            <Link to="/sistema/reporteFinanciero" 
-                                onMouseEnter={() => {this.funActivarHover('menuItemReporteFinanciero', 'ReporteFinanciero')}} 
-                                onMouseLeave={() => {this.funDesactivarHover('menuItemReporteFinanciero', 'ReporteFinanciero')}}
-                                onClick={() => {this.funSeleccionarMenu('menuItemReporteFinanciero', 'ReporteFinanciero')}}
-                            >
-                                <img alt="" src={require("assets/images/iconos/ReporteFinanciero.png")} style={{ marginRight:'15px' }} width="25px" />
-                                <span 
-                                    id={
-                                        this.state.menuItemReporteFinanciero == true
-                                        ? "txtSidebarItemHover"
-                                        : "txtSidebarItem"
-                                    }
-                                >Reporte Financiero</span>
-                            </Link>
-                        </Menu.Item>
+                        PERMISO_MODULO_COMITE,
+                        <Menu.SubMenu 
+                            key="ComiteKc"
+                            title={
+                                <div
+                                    style={{
+                                        marginTop: "-3px"
+                                    }}
+                                >
+                                    <img alt="" src={require("assets/images/iconos/comite.png")} style={{ marginRight:'15px' }} width="25px" />
+                                        <div 
+                                            style={{
+                                                marginTop: "-40px",
+                                                marginLeft: "40px"
+                                            }}
+                                        >Comité KC</div>
+                                </div>
+                            }>
+                            
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_MODULO_REPORTE_GERENCIAL,
+                                    <Menu.Item key="sistema/reportesGenerales" id="menuItemSidebar">
+                                        <Link to="/sistema/reportesGenerales" 
+                                            onMouseEnter={() => {this.funActivarHover('menuItemReporteGerencial', 'ReporteGerencial')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuItemReporteGerencial', 'ReporteGerencial')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuItemReporteGerencial', 'ReporteGerencial')}}
+                                        >
+                                            <img alt="" src={require("assets/images/iconos/reporteGerencial.png")} style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuItemReporteGerencial == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Reporte Gerencial</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_MODULO_REPORTE_FINANCIERO,
+                                    <Menu.Item key="sistema/reporteFinanciero" id="menuItemSidebar">
+                                        <Link to="/sistema/reporteFinanciero" 
+                                            onMouseEnter={() => {this.funActivarHover('menuItemReporteFinanciero', 'ReporteFinanciero')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuItemReporteFinanciero', 'ReporteFinanciero')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuItemReporteFinanciero', 'ReporteFinanciero')}}
+                                        >
+                                            <img alt="" src={require("assets/images/iconos/ReporteFinanciero.png")} style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuItemReporteFinanciero == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Reporte Financiero</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_PRIORIDADES,
+                                    <Menu.Item key="sistema/prioridades" id="menuItemSidebar">
+                                        <Link to="/sistema/prioridades" 
+                                            onMouseEnter={() => {this.funActivarHover('menuItemPrioridades', 'Prioridades')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuItemPrioridades', 'Prioridades')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuItemPrioridades', 'Prioridades')}}
+                                        >
+                                            <img alt="" src={require("assets/images/iconos/prioridades.png")} style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuItemPrioridades == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Prioridades</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+                            
+
+                        </Menu.SubMenu>
                     )
                 }
+                
 
                 {
                     funPermisosObtenidos(
@@ -196,7 +269,7 @@ class SidebarItem extends React.Component {
                                 onMouseLeave={() => {this.funDesactivarHover('menuItemCanalTradicional', 'CanalTradicional')}}
                                 onClick={() => {this.funSeleccionarMenu('menuItemCanalTradicional', 'CanalTradicional')}}
                             >
-                                <img alt="" src={require("assets/images/iconos/canalTradicional.png")} style={{ marginRight:'15px' }} width="25px" />
+                                <img alt="" src={require("assets/images/iconos/canalTradicional.png")} style={{ marginRight:'15px' }} width="22px" />
                                 <span 
                                     id={
                                         this.state.menuItemCanalTradicional == true
@@ -286,9 +359,94 @@ class SidebarItem extends React.Component {
                                 )
                             }
 
+                            {/* {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_MODULO_ICENTIVOS,
+                                    <Menu.SubMenu 
+                                        key="Incentivos"
+                                        title={
+                                            <div
+                                                style={{
+                                                    marginTop: "-3px"
+                                                }}
+                                            >
+                                                <img 
+                                                    alt="" 
+                                                    src={require("assets/images/iconos/incentivos.png")} 
+                                                    style={{ marginRight:'15px' }} 
+                                                    width="25px" 
+                                                />
+                                                    <div 
+                                                        style={{
+                                                            marginTop: "-40px",
+                                                            marginLeft: "40px"
+                                                        }}
+                                                    >Incentivos</div>
+                                            </div>
+                                        }>
+                                        
+                                        {
+                                            funPermisosObtenidos(
+                                                this.props.permisos,
+                                                PERMISO_SUBMODULO_DRIVER_PERU,
+                                                <Menu.Item key="sistema/incentivos/driverperu" id="menuItemSidebar">
+                                                    <Link to="/sistema/incentivos/driverperu" 
+                                                        onMouseEnter={() => {this.funActivarHover('menuSubItemDriverPeru', 'SubItemDriverPeru')}} 
+                                                        onMouseLeave={() => {this.funDesactivarHover('menuSubItemDriverPeru', 'SubItemDriverPeru')}}
+                                                        onClick={() => {this.funSeleccionarMenu('menuSubItemDriverPeru', 'SubItemDriverPeru')}}
+                                                    >
+                                                        <img 
+                                                            alt="" 
+                                                            src={require("assets/images/iconos/peru.png")} 
+                                                            style={{ marginRight:'15px' }} width="25px" />
+                                                        <span 
+                                                            id={
+                                                                this.state.menuSubItemDriverPeru == true
+                                                                ? "txtSidebarItemHover"
+                                                                : "txtSidebarItem"
+                                                            }
+                                                        >Driver Perú</span>
+                                                    </Link>
+                                                </Menu.Item>
+                                            )
+                                        }
+
+                                        {
+                                            funPermisosObtenidos(
+                                                this.props.permisos,
+                                                PERMISO_SUBMODULO_BOLIVIA,
+                                                <Menu.Item key="sistema/incentivos/bolivia" id="menuItemSidebar">
+                                                    <Link to="/sistema/incentivos/bolivia" 
+                                                        onMouseEnter={() => {this.funActivarHover('menuSubItemBolivia', 'SubItemBolivia')}} 
+                                                        onMouseLeave={() => {this.funDesactivarHover('menuSubItemBolivia', 'SubItemBolivia')}}
+                                                        onClick={() => {this.funSeleccionarMenu('menuSubItemBolivia', 'SubItemBolivia')}}
+                                                    >
+                                                        <img 
+                                                            alt="" 
+                                                            src={require("assets/images/iconos/bolivia.png")} 
+                                                            style={{ marginRight:'15px' }} width="25px" />
+                                                        <span 
+                                                            id={
+                                                                this.state.menuSubItemBolivia == true
+                                                                ? "txtSidebarItemHover"
+                                                                : "txtSidebarItem"
+                                                            }
+                                                        >Driver Bolivia</span>
+                                                    </Link>
+                                                </Menu.Item>
+                                            )
+                                        }
+
+                                    </Menu.SubMenu>
+                                )
+                            } */}
+
                         </Menu.SubMenu>
                     )
                 }
+
+                
 
                 {
                     funPermisosObtenidos(
