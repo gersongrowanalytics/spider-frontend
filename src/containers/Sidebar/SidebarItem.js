@@ -21,7 +21,8 @@ import {
     PERMISO_SUBMODULO_DRIVER_PERU,
     PERMISO_SUBMODULO_BOLIVIA,
     PERMISO_SUBMODULO_PRIORIDADES,
-    PERMISO_MODULO_COMITE
+    PERMISO_MODULO_COMITE,
+    PERMISO_SUBMODULO_INNOVACION,
 } from "constants/PermisosTypes"
 
 const MenuItemGroup = Menu.ItemGroup;
@@ -44,6 +45,7 @@ class SidebarItem extends React.Component {
             menuSubItemDriverPeru     : false,
             menuSubItemBolivia        : false,
             menuItemPrioridades       : false,
+            menuItemInnovation        : false,
 
             seleccionoConvenienceStore : false,
             seleccionoReporteGerencial : false,
@@ -59,6 +61,7 @@ class SidebarItem extends React.Component {
             seleccionoSubItemDriverPeru  : false,
             seleccionoSubItemBolivia     : false,
             seleccionoPrioridades        : false,
+            seleccionoInnovation         : false,
         }
         this.funActivarHover = this.funActivarHover.bind(this)
         this.funSeleccionarMenu = this.funSeleccionarMenu.bind(this)
@@ -96,6 +99,7 @@ class SidebarItem extends React.Component {
             menuSubItemBolivia        : false,
             menuSubItemDriverPeru     : false,
             menuItemPrioridades       : false,
+            menuItemInnovation        : false,
             
             seleccionoConvenienceStore  : false,
             seleccionoReporteGerencial  : false,
@@ -112,7 +116,8 @@ class SidebarItem extends React.Component {
             seleccionoReporteFinanciero : false,
             seleccionoSubItemDriverPeru : false,
             seleccionoSubItemBolivia    : false,
-            seleccionoPrioridades       : false
+            seleccionoPrioridades       : false,
+            seleccionoInnovation        : false,
         })
 
         this.setState({
@@ -247,6 +252,29 @@ class SidebarItem extends React.Component {
                                                     : "txtSidebarItem"
                                                 }
                                             >Prioridades</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_INNOVACION,
+                                    <Menu.Item key="sistema/innovaciones" id="menuItemSidebar">
+                                        <Link to="/sistema/innovaciones" 
+                                            onMouseEnter={() => {this.funActivarHover('menuItemInnovation', 'Innovation')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuItemInnovation', 'Innovation')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuItemInnovation', 'Innovation')}}
+                                        >
+                                            <img alt="" src={require("assets/images/iconos/innovation.png")} style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuItemInnovation == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Innovaciones</span>
                                         </Link>
                                     </Menu.Item>
                                 )
