@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.17c8d6b5.chunk.css",
-    "main.js": "/static/js/main.fe372032.chunk.js?ver=2.1",
-    "main.js.map": "/static/js/main.fe372032.chunk.js.map?ver=2.1",
-    "runtime-main.js": "/static/js/runtime-main.5d96f3e5.js?ver=2.1",
+    "main.js": "/static/js/main.620f2beb.chunk.js?ver=2.8",
+    "main.js.map": "/static/js/main.620f2beb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5d96f3e5.js?ver=2.8",
     "runtime-main.js.map": "/static/js/runtime-main.5d96f3e5.js.map",
     "static/css/2.4c16f742.chunk.css": "/static/css/2.4c16f742.chunk.css",
-    "static/js/2.ed200d0e.chunk.js": "/static/js/2.ed200d0e.chunk.js?ver=2.1",
-    "static/js/2.ed200d0e.chunk.js.map": "/static/js/2.ed200d0e.chunk.js.map",
+    "static/js/2.4cb01b69.chunk.js": "/static/js/2.4cb01b69.chunk.js?ver=2.8",
+    "static/js/2.4cb01b69.chunk.js.map": "/static/js/2.4cb01b69.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6bb38c5b7d7e750e12cf389cad7e35d7.js": "/precache-manifest.6bb38c5b7d7e750e12cf389cad7e35d7.js?ver=2.1",
-    "service-worker.js": "/service-worker.js?ver=2.1",
+    "precache-manifest.92e24f84d4a32ddbdfaa1b5ce3128ab3.js": "/precache-manifest.92e24f84d4a32ddbdfaa1b5ce3128ab3.js?ver=2.8",
+    "service-worker.js": "/service-worker.js?ver=2.8",
     "static/css/2.4c16f742.chunk.css.map": "/static/css/2.4c16f742.chunk.css.map",
     "static/css/main.17c8d6b5.chunk.css.map": "/static/css/main.17c8d6b5.chunk.css.map",
-    "static/js/2.ed200d0e.chunk.js.LICENSE.txt": "/static/js/2.ed200d0e.chunk.js.LICENSE.txt",
+    "static/js/2.4cb01b69.chunk.js.LICENSE.txt": "/static/js/2.4cb01b69.chunk.js.LICENSE.txt",
     "static/media/LogoSpiderApp.png": "/static/media/LogoSpiderApp.43bcefbb.png",
     "static/media/LogoSpiderAppBlanco.png": "/static/media/LogoSpiderAppBlanco.cbba2665.png",
     "static/media/styles.css": "/static/media/gaxon.b1a63de8.svg",
@@ -25,10 +25,10 @@
     "static/media/sprite-flags-24x24.css": "/static/media/sprite-flags-24x24.7ed12ca4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5d96f3e5.js?ver=2.1",
+    "static/js/runtime-main.5d96f3e5.js?ver=2.8",
     "static/css/2.4c16f742.chunk.css",
-    "static/js/2.ed200d0e.chunk.js?ver=2.1",
+    "static/js/2.4cb01b69.chunk.js?ver=2.8",
     "static/css/main.17c8d6b5.chunk.css",
-    "static/js/main.fe372032.chunk.js?ver=2.1"
+    "static/js/main.620f2beb.chunk.js?ver=2.8"
   ]
 }

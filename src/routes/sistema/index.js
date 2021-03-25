@@ -9,6 +9,7 @@ import ReportesGenerales from "./ReportesGenerales/ReportesGenerales"
 import ReporteFinanciero from "./ReporteFinanciero/ReporteFinanciero"
 import Prioridades from "./Prioridades/Prioridades"
 import Innovaciones from "./Innovaciones/Innovaciones"
+import Incentivos from "./Incentivos/index"
 
 const Sistema = ({match}) => (
 	<>
@@ -22,6 +23,7 @@ const Sistema = ({match}) => (
 			<Route path={`${match.url}/reporteFinanciero`} component={ReporteFinanciero}/>
 			<Route path={`${match.url}/prioridades`} component={Prioridades}/>
 			<Route path={`${match.url}/innovaciones`} component={Innovaciones}/>
+			<Route path={`${match.url}/incentivos`} component={Incentivos}/>
 		</Switch>
 	</>
 );

@@ -12,8 +12,15 @@ export const PERMISO_MODULO_ECOMMERCE         = 'modulo.ecommerce'
 export const PERMISO_MODULO_TRADE_MARKETING   = 'modulo.trade.marketing'
 export const PERMISO_MODULO_ICENTIVOS         = 'modulo.incentivos'
 export const PERMISO_SUBMODULO_SMARTVIEW      = 'modulo.trade.marketing.submodulo.smartview'
-export const PERMISO_SUBMODULO_DRIVER_PERU    = 'modulo.incentivos.submodulo.driverperu'
-export const PERMISO_SUBMODULO_BOLIVIA        = 'modulo.incentivos.submodulo.bolivia'
+
+export const PERMISO_SUBMODULO_DRIVER_PERU   = 'modulo.incentivos.submodulo.driverperu'
+export const PERMISO_SUBMODULO_BOLIVIA       = 'modulo.incentivos.submodulo.bolivia'
+
+export const PERMISO_DRIVER_PERU_GERENCIALES = 'modulo.incentivos.submodulo.driverperu.gerenciales'
+export const PERMISO_BOLIVIA_GERENCIALES     = 'modulo.incentivos.submodulo.bolivia.gerenciales'
+export const PERMISO_DRIVER_PERU_EJECUTIVOS  = 'modulo.incentivos.submodulo.driverperu.ejecutivos'
+export const PERMISO_BOLIVIA_EJECUTIVOS      = 'modulo.incentivos.submodulo.bolivia.ejecutivos'
+
 export const PERMISO_MODULO_SPIDER_DATA       = 'modulo.spider.data'
 export const PERMISO_MODULO_CONTROL_ACCESOS   = 'modulo.control.accesos'
 export const PERMISO_SUBMODULO_PERMISOS       = 'modulo.control.accesos.submodulo.permisos'

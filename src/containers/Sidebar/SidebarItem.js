@@ -387,7 +387,7 @@ class SidebarItem extends React.Component {
                                 )
                             }
 
-                            {/* {
+                            {
                                 funPermisosObtenidos(
                                     this.props.permisos,
                                     PERMISO_MODULO_ICENTIVOS,
@@ -418,8 +418,8 @@ class SidebarItem extends React.Component {
                                             funPermisosObtenidos(
                                                 this.props.permisos,
                                                 PERMISO_SUBMODULO_DRIVER_PERU,
-                                                <Menu.Item key="sistema/incentivos/driverperu" id="menuItemSidebar">
-                                                    <Link to="/sistema/incentivos/driverperu" 
+                                                <Menu.Item key="sistema/incentivos/driver-peru" id="menuItemSidebar">
+                                                    <Link to="/sistema/incentivos/driver-peru" 
                                                         onMouseEnter={() => {this.funActivarHover('menuSubItemDriverPeru', 'SubItemDriverPeru')}} 
                                                         onMouseLeave={() => {this.funDesactivarHover('menuSubItemDriverPeru', 'SubItemDriverPeru')}}
                                                         onClick={() => {this.funSeleccionarMenu('menuSubItemDriverPeru', 'SubItemDriverPeru')}}
@@ -444,8 +444,8 @@ class SidebarItem extends React.Component {
                                             funPermisosObtenidos(
                                                 this.props.permisos,
                                                 PERMISO_SUBMODULO_BOLIVIA,
-                                                <Menu.Item key="sistema/incentivos/bolivia" id="menuItemSidebar">
-                                                    <Link to="/sistema/incentivos/bolivia" 
+                                                <Menu.Item key="sistema/incentivos/driver-bolivia" id="menuItemSidebar">
+                                                    <Link to="/sistema/incentivos/driver-bolivia" 
                                                         onMouseEnter={() => {this.funActivarHover('menuSubItemBolivia', 'SubItemBolivia')}} 
                                                         onMouseLeave={() => {this.funDesactivarHover('menuSubItemBolivia', 'SubItemBolivia')}}
                                                         onClick={() => {this.funSeleccionarMenu('menuSubItemBolivia', 'SubItemBolivia')}}
@@ -468,7 +468,7 @@ class SidebarItem extends React.Component {
 
                                     </Menu.SubMenu>
                                 )
-                            } */}
+                            }
 
                         </Menu.SubMenu>
                     )
