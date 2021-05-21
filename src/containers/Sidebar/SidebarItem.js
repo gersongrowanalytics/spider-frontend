@@ -22,6 +22,8 @@ import {
     PERMISO_SUBMODULO_BOLIVIA,
     PERMISO_SUBMODULO_PRIORIDADES,
     PERMISO_MODULO_COMITE,
+    PERMISO_MODULO_REPORTING_BO,
+    PERMISO_SUBMODULO_REPORTING_BO_BIG_BETS_BOLIVIA,
     PERMISO_SUBMODULO_INNOVACION,
 } from "constants/PermisosTypes"
 
@@ -46,6 +48,7 @@ class SidebarItem extends React.Component {
             menuSubItemBolivia        : false,
             menuItemPrioridades       : false,
             menuItemInnovation        : false,
+            menuItemReportingBo       : false,
 
             seleccionoConvenienceStore : false,
             seleccionoReporteGerencial : false,
@@ -62,6 +65,7 @@ class SidebarItem extends React.Component {
             seleccionoSubItemBolivia     : false,
             seleccionoPrioridades        : false,
             seleccionoInnovation         : false,
+            seleccionoReportingBo        : false,
         }
         this.funActivarHover = this.funActivarHover.bind(this)
         this.funSeleccionarMenu = this.funSeleccionarMenu.bind(this)
@@ -100,6 +104,7 @@ class SidebarItem extends React.Component {
             menuSubItemDriverPeru     : false,
             menuItemPrioridades       : false,
             menuItemInnovation        : false,
+            menuItemReportingBo       : false,
             
             seleccionoConvenienceStore  : false,
             seleccionoReporteGerencial  : false,
@@ -118,6 +123,7 @@ class SidebarItem extends React.Component {
             seleccionoSubItemBolivia    : false,
             seleccionoPrioridades       : false,
             seleccionoInnovation        : false,
+            seleccionoReportingBo       : false
         })
 
         this.setState({
@@ -542,6 +548,63 @@ class SidebarItem extends React.Component {
                                 >Spider Data</span>
                             </Link>
                         </Menu.Item>
+                    )
+                }
+
+
+
+
+
+
+
+
+
+
+                {
+                    funPermisosObtenidos(
+                        this.props.permisos,
+                        PERMISO_MODULO_REPORTING_BO,
+                        <Menu.SubMenu 
+                            key="ReportingBo"
+                            title={
+                                <div
+                                    style={{
+                                        marginTop: "-3px"
+                                    }}
+                                >
+                                    <img alt="" src={require("assets/images/iconos/reportingbo.png")} style={{ marginRight:'15px' }} width="25px" />
+                                        <div 
+                                            style={{
+                                                marginTop: "-40px",
+                                                marginLeft: "40px"
+                                            }}
+                                        >Reporting BO</div>
+                                </div>
+                            }>
+                            
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_REPORTING_BO_BIG_BETS_BOLIVIA,
+                                    <Menu.Item key="sistema/reportingBo/big-bets-bolivia" id="menuItemSidebar">
+                                        <Link to="/sistema/reportingBo/big-bets-bolivia" 
+                                            onMouseEnter={() => {this.funActivarHover('menuItemReportingBo', 'ReportingBo')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuItemReportingBo', 'ReportingBo')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuItemReportingBo', 'ReportingBo')}}
+                                        >
+                                            <img alt="" src={require("assets/images/iconos/bigbets.png")} style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuItemReportingBo == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Big Bets Bolivia</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+                        </Menu.SubMenu>
                     )
                 }
 
