@@ -25,6 +25,7 @@ import {
     PERMISO_MODULO_REPORTING_BO,
     PERMISO_SUBMODULO_REPORTING_BO_BIG_BETS_BOLIVIA,
     PERMISO_SUBMODULO_INNOVACION,
+    PERMISO_SUBMODULO_REPORTING_BO_PRIORIDADES_BO
 } from "constants/PermisosTypes"
 
 const MenuItemGroup = Menu.ItemGroup;
@@ -49,6 +50,7 @@ class SidebarItem extends React.Component {
             menuItemPrioridades       : false,
             menuItemInnovation        : false,
             menuItemReportingBo       : false,
+            menuItemPrioridadesBo     : false,
 
             seleccionoConvenienceStore : false,
             seleccionoReporteGerencial : false,
@@ -66,6 +68,7 @@ class SidebarItem extends React.Component {
             seleccionoPrioridades        : false,
             seleccionoInnovation         : false,
             seleccionoReportingBo        : false,
+            seleccionoPrioridadesBo      : false,
         }
         this.funActivarHover = this.funActivarHover.bind(this)
         this.funSeleccionarMenu = this.funSeleccionarMenu.bind(this)
@@ -105,6 +108,7 @@ class SidebarItem extends React.Component {
             menuItemPrioridades       : false,
             menuItemInnovation        : false,
             menuItemReportingBo       : false,
+            menuItemPrioridadesBo     : false,
             
             seleccionoConvenienceStore  : false,
             seleccionoReporteGerencial  : false,
@@ -123,7 +127,8 @@ class SidebarItem extends React.Component {
             seleccionoSubItemBolivia    : false,
             seleccionoPrioridades       : false,
             seleccionoInnovation        : false,
-            seleccionoReportingBo       : false
+            seleccionoReportingBo       : false,
+            seleccionoPrioridadesBo     : false,
         })
 
         this.setState({
@@ -600,6 +605,30 @@ class SidebarItem extends React.Component {
                                                     : "txtSidebarItem"
                                                 }
                                             >Big Bets Bolivia</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_REPORTING_BO_PRIORIDADES_BO,
+                                    <Menu.Item key="sistema/reportingBo/prioridades-bo" id="menuItemSidebar">
+                                        <Link to="/sistema/reportingBo/prioridades-bo" 
+                                            onMouseEnter={() => {this.funActivarHover('menuItemPrioridadesBo', 'PrioridadesBo')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuItemPrioridadesBo', 'PrioridadesBo')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuItemPrioridadesBo', 'PrioridadesBo')}}
+                                        >
+                                            <img alt="" src={require("assets/images/iconos/prioridades.png")} style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuItemPrioridadesBo == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Prioridades BO</span>
                                         </Link>
                                     </Menu.Item>
                                 )

@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel/index'
+import IconoKpi from 'assets/images/dashboard/kpi.png'
 
 const App = () => {
 
@@ -8,6 +9,12 @@ const App = () => {
             nombre  : ["Big Bets Bolivia", ""],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/negocio.png",
             url     : "big-bets-bolivia"
+        },
+
+        {
+            nombre  : ["Prioridades Bo", ""],
+            imagen  : IconoKpi,
+            url     : "prioridades-bo"
         },
     ]
 

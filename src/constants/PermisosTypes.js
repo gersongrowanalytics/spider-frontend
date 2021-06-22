@@ -28,7 +28,9 @@ export const PERMISO_SUBMODULO_TIPOS_USUARIOS = 'modulo.control.accesos.submodul
 
 export const PERMISO_MODULO_REPORTING_BO = 'modulo.reporting.bo'
 export const PERMISO_SUBMODULO_REPORTING_BO_BIG_BETS_BOLIVIA = 'modulo.reporting.bo.submodulo.big.bets.bolivia'
+export const PERMISO_SUBMODULO_REPORTING_BO_PRIORIDADES_BO = 'modulo.reporting.bo.submodulo.prioridades.bo'
 export const PERMISO_SUBMODULO_REPORTING_BO_DASHBOARD_BIG_BETS_BOLIVIA = 'modulo.reporting.bo.submodulo.dashboard.big.bets.bolivia'
+export const PERMISO_SUBMODULO_REPORTING_BO_DASHBOARD_PRIORIDADES_BO = 'modulo.reporting.bo.submodulo.dashboard.prioridades.bo'
 
 
 

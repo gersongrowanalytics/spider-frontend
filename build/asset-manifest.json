@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.17c8d6b5.chunk.css",
-    "main.js": "/static/js/main.f84ee643.chunk.js?ver=61",
-    "main.js.map": "/static/js/main.f84ee643.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5d96f3e5.js?ver=61",
+    "main.js": "/static/js/main.69c0bf47.chunk.js?ver=201",
+    "main.js.map": "/static/js/main.69c0bf47.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5d96f3e5.js?ver=201",
     "runtime-main.js.map": "/static/js/runtime-main.5d96f3e5.js.map",
     "static/css/2.4c16f742.chunk.css": "/static/css/2.4c16f742.chunk.css",
-    "static/js/2.2d91c39d.chunk.js": "/static/js/2.2d91c39d.chunk.js?ver=61",
-    "static/js/2.2d91c39d.chunk.js.map": "/static/js/2.2d91c39d.chunk.js.map",
+    "static/js/2.6dc39ec2.chunk.js": "/static/js/2.6dc39ec2.chunk.js?ver=201",
+    "static/js/2.6dc39ec2.chunk.js.map": "/static/js/2.6dc39ec2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3d0577c81a5d4526badb7fa053a2f5b7.js": "/precache-manifest.3d0577c81a5d4526badb7fa053a2f5b7.js?ver=61",
-    "service-worker.js": "/service-worker.js?ver=61",
+    "precache-manifest.49e3069eee2927870efcfa6533b542ee.js": "/precache-manifest.49e3069eee2927870efcfa6533b542ee.js?ver=201",
+    "service-worker.js": "/service-worker.js?ver=201",
     "static/css/2.4c16f742.chunk.css.map": "/static/css/2.4c16f742.chunk.css.map",
     "static/css/main.17c8d6b5.chunk.css.map": "/static/css/main.17c8d6b5.chunk.css.map",
-    "static/js/2.2d91c39d.chunk.js.LICENSE.txt": "/static/js/2.2d91c39d.chunk.js.LICENSE.txt",
+    "static/js/2.6dc39ec2.chunk.js.LICENSE.txt": "/static/js/2.6dc39ec2.chunk.js.LICENSE.txt",
     "static/media/LogoSpiderApp.png": "/static/media/LogoSpiderApp.43bcefbb.png",
     "static/media/LogoSpiderAppBlanco.png": "/static/media/LogoSpiderAppBlanco.cbba2665.png",
     "static/media/styles.css": "/static/media/gaxon.b1a63de8.svg",
+    "static/media/kpi.png": "/static/media/kpi.da27a98c.png",
     "static/media/logoGrowBlancoNegro.png": "/static/media/logoGrowBlancoNegro.4996a37c.png",
     "static/media/logoGrowColor.png": "/static/media/logoGrowColor.5e31663f.png",
     "static/media/logoSpiderBlancoNegro.png": "/static/media/logoSpiderBlancoNegro.68075f11.png",
@@ -25,10 +26,10 @@
     "static/media/sprite-flags-24x24.css": "/static/media/sprite-flags-24x24.7ed12ca4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5d96f3e5.js?ver=61",
+    "static/js/runtime-main.5d96f3e5.js?ver=201",
     "static/css/2.4c16f742.chunk.css",
-    "static/js/2.2d91c39d.chunk.js?ver=61",
+    "static/js/2.6dc39ec2.chunk.js?ver=201",
     "static/css/main.17c8d6b5.chunk.css",
-    "static/js/main.f84ee643.chunk.js?ver=61"
+    "static/js/main.69c0bf47.chunk.js?ver=201"
   ]
 }
