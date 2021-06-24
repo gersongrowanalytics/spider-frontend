@@ -58,9 +58,9 @@ const AppCanalTradicional = () => {
             url     : "tendero"
         },
         {
-            nombre  : ["OTROS", ""],
+            nombre  : ["PRICING HUB", ""],
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/otros.png",
-            url     : "otros"
+            url     : "pricing-hub"
         }
     ]
 

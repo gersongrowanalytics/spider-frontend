@@ -15,7 +15,7 @@ const CanalTradicional = ({match}) => (
             <Route path={`${match.url}/comercial`} component={Comercial}/>
             <Route path={`${match.url}/distribuidora`} component={Distribuidora}/>
             <Route path={`${match.url}/tendero`} component={Tendero}/>
-            <Route path={`${match.url}/otros`} component={Otros}/>
+            <Route path={`${match.url}/pricing-hub`} component={Otros}/>
         </Switch>
     </>
 );
