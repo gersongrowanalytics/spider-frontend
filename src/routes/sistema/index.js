@@ -11,6 +11,7 @@ import Prioridades from "./Prioridades/Prioridades"
 import Innovaciones from "./Innovaciones/Innovaciones"
 import Incentivos from "./Incentivos/index"
 import ReportingBo from './ReportingBo/index'
+import Recompra from './Recompra/Recompra'
 
 const Sistema = ({match}) => (
 	<>
@@ -21,6 +22,7 @@ const Sistema = ({match}) => (
 			<Route path={`${match.url}/spiderData`} component={SpiderData}/>
 			<Route path={`${match.url}/controles`} component={Controles}/>
 			<Route path={`${match.url}/reportesGenerales`} component={ReportesGenerales}/>
+			<Route path={`${match.url}/recompra`} component={Recompra}/>
 			<Route path={`${match.url}/reporteFinanciero`} component={ReporteFinanciero}/>
 			<Route path={`${match.url}/prioridades`} component={Prioridades}/>
 			<Route path={`${match.url}/innovaciones`} component={Innovaciones}/>

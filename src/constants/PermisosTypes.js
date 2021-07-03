@@ -8,6 +8,8 @@ export const PERMISO_MODULO_REPORTE_GERENCIAL = 'modulo.reporte.gerencial'
 export const PERMISO_MODULO_REPORTE_FINANCIERO = 'modulo.reporte.financiero'
 export const PERMISO_SUBMODULO_PRIORIDADES    = 'modulo.comite.prioridades'
 export const PERMISO_SUBMODULO_INNOVACION     = 'modulo.comite.innovaciones'
+export const PERMISO_SUBMODULO_RECOMPRA       = 'modulo.comite.recompra'
+
 export const PERMISO_MODULO_ECOMMERCE         = 'modulo.ecommerce'
 export const PERMISO_MODULO_TRADE_MARKETING   = 'modulo.trade.marketing'
 export const PERMISO_MODULO_ICENTIVOS         = 'modulo.incentivos'
