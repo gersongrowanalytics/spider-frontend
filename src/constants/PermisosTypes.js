@@ -40,3 +40,6 @@ export const PERMISO_SUBMODULO_REPORTING_BO_DASHBOARD_PRIORIDADES_BO = 'modulo.r
 // PERMISOS DEL MODULO DE PROMOCIONES
 export const PERMISO_BOTON_DESCARGAR_PROMOCIONES = 'modulo.promocion.boton.descargar.promociones'
 export const PERMISO_BOTON_EDITAR_PROMOCION      = 'modulo.promocion.boton.editar.promocion'
+
+// CANAL MODERNO
+export const PERMISO_MODULO_CANAL_MODERNO_SUBMODULO_SALES_TRACKING_MODERNO = 'modulo.canal.moderno.submodulo.sales.tracking.moderno'
