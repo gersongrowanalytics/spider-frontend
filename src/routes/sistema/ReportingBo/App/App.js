@@ -16,6 +16,11 @@ const App = () => {
             imagen  : IconoKpi,
             url     : "prioridades-bo"
         },
+        {
+            nombre  : ["Reporte Financiero BO", ""],
+            imagen  : 'https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/otros.png',
+            url     : "reporte-financiero-bo"
+        },
     ]
 
     return (

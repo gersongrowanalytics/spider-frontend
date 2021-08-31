@@ -33,6 +33,7 @@ export const PERMISO_SUBMODULO_REPORTING_BO_BIG_BETS_BOLIVIA = 'modulo.reporting
 export const PERMISO_SUBMODULO_REPORTING_BO_PRIORIDADES_BO = 'modulo.reporting.bo.submodulo.prioridades.bo'
 export const PERMISO_SUBMODULO_REPORTING_BO_DASHBOARD_BIG_BETS_BOLIVIA = 'modulo.reporting.bo.submodulo.dashboard.big.bets.bolivia'
 export const PERMISO_SUBMODULO_REPORTING_BO_DASHBOARD_PRIORIDADES_BO = 'modulo.reporting.bo.submodulo.dashboard.prioridades.bo'
+export const PERMISO_SUBMODULO_REPORTING_BO_REPORTE_FINANCIERO_BO = 'modulo.reporting.bo.submodulo.dashboard.reporte.financiero.bo'
 
 
 

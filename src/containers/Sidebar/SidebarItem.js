@@ -26,7 +26,8 @@ import {
     PERMISO_SUBMODULO_REPORTING_BO_BIG_BETS_BOLIVIA,
     PERMISO_SUBMODULO_INNOVACION,
     PERMISO_SUBMODULO_REPORTING_BO_PRIORIDADES_BO,
-    PERMISO_SUBMODULO_RECOMPRA
+    PERMISO_SUBMODULO_RECOMPRA,
+    PERMISO_SUBMODULO_REPORTING_BO_REPORTE_FINANCIERO_BO
 } from "constants/PermisosTypes"
 
 const MenuItemGroup = Menu.ItemGroup;
@@ -53,6 +54,7 @@ class SidebarItem extends React.Component {
             menuItemReportingBo       : false,
             menuItemPrioridadesBo     : false,
             menuItemRecompra          : false,
+            menuItemReporteFinancieroBo  : false,
 
             seleccionoConvenienceStore : false,
             seleccionoReporteGerencial : false,
@@ -72,6 +74,7 @@ class SidebarItem extends React.Component {
             seleccionoReportingBo        : false,
             seleccionoPrioridadesBo      : false,
             seleccionoRecompra           : false,
+            seleccionoReporteFinancieroBo : false,
         }
         this.funActivarHover = this.funActivarHover.bind(this)
         this.funSeleccionarMenu = this.funSeleccionarMenu.bind(this)
@@ -113,6 +116,7 @@ class SidebarItem extends React.Component {
             menuItemReportingBo       : false,
             menuItemPrioridadesBo     : false,
             menuItemRecompra          : false,
+            menuItemReporteFinancieroBo  : false,
             
             seleccionoConvenienceStore  : false,
             seleccionoReporteGerencial  : false,
@@ -134,6 +138,7 @@ class SidebarItem extends React.Component {
             seleccionoReportingBo       : false,
             seleccionoPrioridadesBo     : false,
             seleccionoRecompra          : false,
+            seleccionoReporteFinancieroBo : false,
         })
 
         this.setState({
@@ -658,6 +663,29 @@ class SidebarItem extends React.Component {
                                                     : "txtSidebarItem"
                                                 }
                                             >Prioridades BO</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_REPORTING_BO_REPORTE_FINANCIERO_BO,
+                                    <Menu.Item key="sistema/reportingBo/reporte-financiero-bo" id="menuItemSidebar">
+                                        <Link to="/sistema/reportingBo/reporte-financiero-bo" 
+                                            onMouseEnter={() => {this.funActivarHover('menuItemReporteFinancieroBo', 'ReporteFinancieroBo')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuItemReporteFinancieroBo', 'ReporteFinancieroBo')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuItemReporteFinancieroBo', 'ReporteFinancieroBo')}}
+                                        >
+                                            <img alt="" src={require("assets/images/iconos/ReporteFinanciero.png")} style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuItemReporteFinancieroBo == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >Reporte Financiero BO</span>
                                         </Link>
                                     </Menu.Item>
                                 )
