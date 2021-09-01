@@ -35,24 +35,34 @@ const AppCanalTradicional = () => {
 
     const canales = [
         {
-            nombre  : ["SHARE PERFORMANCE", "(SCANTRACK)", "INFANT & CHILD"],
-            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/salestracking.jpg",
-            url     : "infant-child"
-        },
-        {
-            nombre  : ["SHARE PERFORMANCE", "(SCANTRACK)", "BATH TISSUE"],
-            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/shareperformance.jpg",
-            url     : "bath-tissue"
-        },
-        {
-            nombre  : ["SALES TRACKING", "MODERNO"],
-            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/moderno.jpg",
-            url     : "sales-tranking-moderno"
-        },
-        {
-            nombre  : ["OTROS", ""],
+            // nombre  : ["SHARE PERFORMANCE", "(SCANTRACK)", "INFANT & CHILD"],
+            nombre  : ["VISTA GERENCIAL", "", ""],
+            // imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/salestracking.jpg",
             imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/otros.png",
-            url     : "otros"
+            // url     : "infant-child"
+            url     : "vista-gerencial"
+        },
+        {
+            // nombre  : ["SHARE PERFORMANCE", "(SCANTRACK)", "BATH TISSUE"],
+            nombre  : ["VISTA KAM", "", ""],
+            // imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/shareperformance.jpg",
+            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/moderno.jpg",
+            // url     : "bath-tissue"
+            url     : "vista-kam"
+        },
+        {
+            nombre  : ["MARKET SHARE", "BATH TISSUE"],
+            // imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/moderno.jpg",
+            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/shareperformance.jpg",
+            // url     : "sales-tranking-moderno"
+            url     : "market-share-bath-tissue"
+        },
+        {
+            nombre  : ["MARKET SHARE", "DIAPERS"],
+            // imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalTradicional/otros.png",
+            imagen  : "https://backend-spider-kimberly.grow-corporate.com/Spider/img/CanalModerno/salestracking.jpg",
+            // url     : "otros"
+            url     : "market-share-diapers"
         }
     ]
 

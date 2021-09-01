@@ -359,8 +359,8 @@ class SidebarItem extends React.Component {
                     funPermisosObtenidos(
                         this.props.permisos,
                         PERMISO_MODULO_CANAL_MODERNO,
-                        <Menu.Item key="sistema/canalModerno/infant-child" id="menuItemSidebar">
-                            <Link to="/sistema/canalModerno/infant-child" 
+                        <Menu.Item key="sistema/canalModerno/vista-gerencial" id="menuItemSidebar">
+                            <Link to="/sistema/canalModerno/vista-gerencial" 
                                 onMouseEnter={() => {this.funActivarHover('menuItemCanalModerno', 'CanalModerno')}} 
                                 onMouseLeave={() => {this.funDesactivarHover('menuItemCanalModerno', 'CanalModerno')}}
                                 onClick={() => {this.funSeleccionarMenu('menuItemCanalModerno', 'CanalModerno')}}

@@ -6,11 +6,11 @@ const Otros = () => {
     return (
         <div>
             <CarouselCanalModerno/>
-            {/* <div style={{marginLeft:'-30px', position: 'relative'}}>
+            <div style={{marginLeft:'-30px', position: 'relative'}}>
                 <iframe
                     width="103%"
                     height="900"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiMzBhNTFhYzYtOTMzMS00MWE0LWIwM2MtYmViNzkxZGMwMDYzIiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiMGY1ZTA0NmUtNjgyMi00NjY3LWI2OTMtOWFkNzllNmM3MWJkIiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9"
                     frameborder="0"
                 ></iframe>
                 <div id="taparIzqcdistribuidora">
@@ -19,7 +19,7 @@ const Otros = () => {
                 <div id="taparDerechaCdistribuidora">
 
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
