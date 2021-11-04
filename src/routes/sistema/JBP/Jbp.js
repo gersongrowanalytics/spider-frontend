@@ -7,7 +7,7 @@ const Jbp = () => {
                 <iframe
                     width="100%"
                     height="1300"
-                    src = "https://growanalyticscom.sharepoint.com/sites/CreativeStudio/Documentos%20compartidos/Forms/AllItems.aspx?id=%2Fsites%2FCreativeStudio%2FDocumentos%20compartidos%2F01%2E%20KCC%2FSpider%2FMen%C3%BA%20%C3%ADconos&viewid=4ff54fbe%2Ddb6d%2D4103%2D8e92%2D7adb9e567f77"
+                    src = "https://app.powerbi.com/view?r=eyJrIjoiODAzMmEwYjEtNjQ5ZS00MWRlLThkYTktODdmYTNkZDUyNjBjIiwidCI6IjFkZjQ2ODhjLWI5MTUtNDEwMy05OGMwLTNhMzY4ZmIyOTNlOCJ9"
                     frameborder="0"
                 ></iframe>
                 <div id="taparIzqcdistribuidora">
