@@ -27,7 +27,8 @@ import {
     PERMISO_SUBMODULO_INNOVACION,
     PERMISO_SUBMODULO_REPORTING_BO_PRIORIDADES_BO,
     PERMISO_SUBMODULO_RECOMPRA,
-    PERMISO_SUBMODULO_REPORTING_BO_REPORTE_FINANCIERO_BO
+    PERMISO_SUBMODULO_REPORTING_BO_REPORTE_FINANCIERO_BO,
+    PERMISO_SUBMODULO_JBP,
 } from "constants/PermisosTypes"
 
 const MenuItemGroup = Menu.ItemGroup;
@@ -54,6 +55,7 @@ class SidebarItem extends React.Component {
             menuItemReportingBo       : false,
             menuItemPrioridadesBo     : false,
             menuItemRecompra          : false,
+            menuItemJBP               : false,
             menuItemReporteFinancieroBo  : false,
 
             seleccionoConvenienceStore : false,
@@ -74,6 +76,7 @@ class SidebarItem extends React.Component {
             seleccionoReportingBo        : false,
             seleccionoPrioridadesBo      : false,
             seleccionoRecompra           : false,
+            seleccionoJBP                : false,
             seleccionoReporteFinancieroBo : false,
         }
         this.funActivarHover = this.funActivarHover.bind(this)
@@ -116,6 +119,7 @@ class SidebarItem extends React.Component {
             menuItemReportingBo       : false,
             menuItemPrioridadesBo     : false,
             menuItemRecompra          : false,
+            menuItemJBP               : false,
             menuItemReporteFinancieroBo  : false,
             
             seleccionoConvenienceStore  : false,
@@ -138,6 +142,7 @@ class SidebarItem extends React.Component {
             seleccionoReportingBo       : false,
             seleccionoPrioridadesBo     : false,
             seleccionoRecompra          : false,
+            seleccionoJBP               : false,
             seleccionoReporteFinancieroBo : false,
         })
 
@@ -320,6 +325,29 @@ class SidebarItem extends React.Component {
                                                     : "txtSidebarItem"
                                                 }
                                             >Recompra</span>
+                                        </Link>
+                                    </Menu.Item>
+                                )
+                            }
+
+                            {
+                                funPermisosObtenidos(
+                                    this.props.permisos,
+                                    PERMISO_SUBMODULO_JBP,
+                                    <Menu.Item key="sistema/jbp" id="menuItemSidebar">
+                                        <Link to="/sistema/jbp" 
+                                            onMouseEnter={() => {this.funActivarHover('menuItemJBP', 'JBP')}} 
+                                            onMouseLeave={() => {this.funDesactivarHover('menuItemJBP', 'JBP')}}
+                                            onClick={() => {this.funSeleccionarMenu('menuItemJBP', 'JBP')}}
+                                        >
+                                            <img alt="" src={require("assets/images/iconos/jbp.png")} style={{ marginRight:'15px' }} width="25px" />
+                                            <span 
+                                                id={
+                                                    this.state.menuItemJBP == true
+                                                    ? "txtSidebarItemHover"
+                                                    : "txtSidebarItem"
+                                                }
+                                            >JBP</span>
                                         </Link>
                                     </Menu.Item>
                                 )
